@@ -1,0 +1,77 @@
+{
+  "header": {
+    "eyebrow": "Where I work",
+    "headlineHtml": "Portland and<br /><em>the Willamette Valley.</em>",
+    "intro": "Three distinct markets connected by one corridor I know deeply — from Portland's inner neighborhoods, through the suburbs, all the way down to Albany."
+  },
+  "sectionBreak": {
+    "eyebrow": "Market detail",
+    "headline": "Three markets. One corridor. Fifteen years of relationships.",
+    "intro": ""
+  },
+  "markets": [
+    {
+      "slug": "portland-proper",
+      "label": "Inner city",
+      "name": "Portland<br />Proper",
+      "neighborhoods": "NE Portland<br />SE Portland<br />North Portland<br />NW Portland<br />Inner Eastside",
+      "mapImage": "",
+      "mapAlt": "Portland Proper map",
+      "photoImage": "/images/market-portland.jpg",
+      "photoAlt": "Portland Proper",
+      "paragraphs": [
+        "Portland's inner neighborhoods are where I've spent the bulk of my career. NE Portland — Alberta, Beaumont, Irvington, Concordia — offers character buildings with long-term renter demand and an active buyer pool that knows the value of a well-located older building. SE Portland along Division, Clinton, and Hawthorne continues to attract investors for its walkability and demographic strength.",
+        "North Portland has seen meaningful appreciation as buyers have moved beyond more established corridors. NW Portland carries its own dynamics with a dense urban renter base and proximity to employment and retail."
+      ],
+      "details": [
+        { "label": "Property type", "value": "Duplex – 100 units" },
+        { "label": "Buyer pool", "value": "Deep, competitive" },
+        { "label": "Character", "value": "Urban, walkable" }
+      ]
+    },
+    {
+      "slug": "portland-metro",
+      "label": "Suburbs",
+      "name": "Portland<br />Metro",
+      "neighborhoods": "Lake Oswego<br />Beaverton · Hillsboro<br />Gresham · Tigard<br />Tualatin · Milwaukie<br />Clackamas",
+      "mapImage": "",
+      "mapAlt": "Portland Metro map",
+      "photoImage": "/images/market-all.jpg",
+      "photoAlt": "Portland Metro",
+      "paragraphs": [
+        "The Portland metro suburbs offer a different investment profile than the inner city — generally larger lot sizes, more recent construction, and a renter base anchored by tech and healthcare employment. Beaverton and Hillsboro in particular benefit from proximity to Intel, Nike, and the broader Silicon Forest employment corridor.",
+        "Lake Oswego and Milwaukie attract owners looking for stable, higher-income renters. Gresham offers accessible entry points with strong fundamentals. Clackamas continues to grow as a multifamily market driven by its position between Portland and the broader south metro."
+      ],
+      "details": [
+        { "label": "Property type", "value": "Duplex – 100 units" },
+        { "label": "Buyer pool", "value": "Active, regional" },
+        { "label": "Character", "value": "Suburban, employment-driven" }
+      ],
+      "alt": true
+    },
+    {
+      "slug": "willamette",
+      "label": "I-5 corridor",
+      "name": "Willamette<br />Valley",
+      "neighborhoods": "Newberg<br />McMinnville<br />Salem<br />Albany",
+      "mapImage": "",
+      "mapAlt": "Willamette Valley map",
+      "photoImage": "/images/market-valley.jpg",
+      "photoAlt": "Willamette Valley",
+      "paragraphs": [
+        "The Willamette Valley corridor represents a distinct and often underappreciated multifamily market. Connected by I-5 and sharing similar investment fundamentals, these communities offer accessible entry points, stable renter bases, and long-term ownership potential that's harder to find in the Portland market today.",
+        "Newberg sits at the edge of wine country with a growing investor profile. McMinnville is Yamhill County's largest city with a strong downtown core and steady renter demand. Salem's state government employment anchors one of the most stable renter bases in Oregon. Albany offers historic buildings, affordable pricing, and steady demand from manufacturing and healthcare workers."
+      ],
+      "details": [
+        { "label": "Property type", "value": "Duplex – 100 units" },
+        { "label": "Buyer pool", "value": "Value-focused" },
+        { "label": "Character", "value": "Affordable, stable" }
+      ]
+    }
+  ],
+  "cta": {
+    "headlineHtml": "Let's talk about what it's worth<br />and <em>what makes sense for you.</em>",
+    "body": "Whether you're curious about current values, thinking about timing a sale, or just want to understand your market better — I'm happy to have an honest conversation. No pressure, no pitch.",
+    "button": { "label": "Start a conversation", "href": "/contact" }
+  }
+}

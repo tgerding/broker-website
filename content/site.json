@@ -1,0 +1,29 @@
+{
+  "brand": "Gerding Commercial Real Estate",
+  "tagline": "Portland Multifamily Advisor",
+  "description": "Tyler Gerding is a Portland-based multifamily advisor and Principal Broker helping apartment owners across the Willamette Valley make confident, informed decisions.",
+  "broker": {
+    "name": "Tyler Gerding",
+    "title": "Principal Broker",
+    "phone": "503.467.8901",
+    "email": "tyler@gerdingcre.com",
+    "location": "Portland, Oregon",
+    "linkedIn": "https://linkedin.com/in/tylergerding",
+    "linkedInLabel": "Connect with Tyler"
+  },
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "About", "href": "/about" },
+    { "label": "Markets", "href": "/markets" },
+    { "label": "Properties", "href": "/properties" }
+  ],
+  "footer": {
+    "tagline": "\"Some decisions span generations.\nMake them with someone who gets it.\"",
+    "legalLinks": [
+      { "label": "Privacy Policy", "href": "#" },
+      { "label": "Disclaimer", "href": "#" }
+    ],
+    "smallPrint": "Licensed in Oregon · Principal Broker",
+    "copyright": "© 2024 Gerding Commercial Real Estate · gerdingcre.com"
+  }
+}

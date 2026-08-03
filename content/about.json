@@ -1,0 +1,68 @@
+{
+  "header": {
+    "eyebrow": "About Tyler Gerding",
+    "headlineHtml": "Advisor first.<br /><em>Broker second.</em>",
+    "intro": "Fifteen years in Portland multifamily. Over a decade as an owner. A reputation for tenacious negotiation and honest advice — even when that advice is to wait."
+  },
+  "bio": {
+    "eyebrow": "Tyler Gerding",
+    "headline": "Built on 15 years of experience and the perspective of a fellow owner.",
+    "paragraphs": [
+      "I grew up watching my parents own apartments — a fourplex and a fiveplex. I saw the little luxuries that investment created for our family, and I also watched them work hard to make it successful. That early experience gave me an understanding of this business that no classroom could provide.",
+      "After building a 15-year career working alongside one of Portland's most respected commercial real estate mentors, I founded Gerding CRE to do things on my own terms — with a boutique focus, deep market expertise, and the personal attention that larger firms simply can't offer.",
+      "I've been an apartment owner myself for over ten years. When I sit across from a client, I'm not guessing at what it feels like to make these decisions. I know."
+    ]
+  },
+  "credentials": [
+    {
+      "label": "Experience",
+      "value": "15",
+      "description": "Years in Portland multifamily, working with owners across the Willamette Valley"
+    },
+    {
+      "label": "As an owner",
+      "value": "10+",
+      "description": "Years as an apartment building owner — bringing a real owner's perspective to every conversation"
+    },
+    {
+      "label": "License",
+      "value": "Oregon<br />Principal Broker",
+      "valueSize": "sm",
+      "description": "Founder, Gerding Commercial Real Estate · Licensed in Oregon"
+    }
+  ],
+  "perspective": {
+    "eyebrow": "The owner's perspective",
+    "headline": "I've seen this business from every side of the table.",
+    "intro": "Most brokers understand apartment buildings as financial instruments. I understand them as something more — as the product of real work, real sacrifice, and real hope for the future. That shift in perspective changes everything about how I advise clients.",
+    "quote": "Apartment buildings aren't just assets. They represent years of effort, financial security, and for many families — a legacy. I treat them that way.",
+    "paragraphs": [
+      "When you work with me, you're working with someone who has navigated the same decisions you're facing — as an owner and as an advisor. That's not a marketing line. It's just true."
+    ],
+    "approachEyebrow": "My approach",
+    "approachHeadline": "Honest advice, even when it's not what you want to hear.",
+    "approachParagraphs": [
+      "I started Gerding CRE because I believe apartment owners deserve an advisor, not a salesperson. Someone who will tell you the market isn't right to sell yet. Someone who helps you think through a 1031 exchange before you've even listed.",
+      "My goal is to be the person you call years before you make a move — and years after. That long-term relationship is the foundation this firm is built on."
+    ]
+  },
+  "negotiation": {
+    "eyebrow": "When it's time to transact",
+    "headline": "Anyone can list a property. The question is whether your advisor can truly fight for you.",
+    "paragraphs": [
+      "My reputation for negotiation is something I've earned over fifteen years of deals — from small duplexes to 100-unit portfolios. I understand buyer psychology, I know this market's buyer pool deeply, and I know how to position a property to generate the right competition.",
+      "Picking the right negotiator is one of the most important — and most overlooked — decisions a seller makes. I'm not aggressive for its own sake. But when my clients need someone in their corner who won't blink, I'm that person."
+    ],
+    "points": [
+      { "number": "01", "title": "Deep buyer relationships", "body": "Fifteen years means I know the active buyers before a property ever hits the market. That's leverage from day one." },
+      { "number": "02", "title": "Strategic positioning", "body": "Older buildings have character and history. I know how to tell that story in a way that commands the right price." },
+      { "number": "03", "title": "Owner's market knowledge", "body": "As an owner myself, I understand what buyers are thinking — which gives me a real edge negotiating on your behalf." },
+      { "number": "04", "title": "Disciplined execution", "body": "From marketing through closing, I manage every detail. No dropped balls, no surprises, no hand-offs to junior staff." }
+    ]
+  },
+  "cta": {
+    "headline": "You don't need an agenda to reach out.",
+    "body": "Whether you have a specific property in mind or just want to understand the market better — I'm happy to have an honest conversation. That's how every good relationship starts.",
+    "button": { "label": "Get in touch", "href": "/contact" }
+  }
+}

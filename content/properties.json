@@ -1,0 +1,62 @@
+{
+  "header": {
+    "eyebrow": "Properties",
+    "headlineHtml": "Active listings<br />and <em>recent sales.</em>",
+    "intro": "I work with a select number of properties at any given time — representing sellers and buyers across Portland and the Willamette Valley. Below you'll find what's currently active and a sample of what I've recently closed.\n\nFor details on any closed transaction, reach out directly. I'm happy to share context on comparable sales in your market."
+  },
+  "activeSection": {
+    "eyebrow": "Active listings",
+    "headline": "Currently available.",
+    "note": "Click any listing to expand full property details, unit mix, and financials."
+  },
+  "offMarket": {
+    "eyebrow": "Off-market opportunities",
+    "headline": "Looking to buy? I frequently work with properties that never hit the open market.",
+    "body": "Many of the properties I represent are sold quietly — before they're ever publicly listed. If you're a qualified buyer looking for multifamily in Portland or the Willamette Valley, let's talk about what I'm seeing and what may be coming available.",
+    "button": { "label": "Connect with Tyler", "href": "/contact" }
+  },
+  "closedSection": {
+    "eyebrow": "Recently closed",
+    "headline": "A sample of what I've sold<br />in the last 12 months.",
+    "transactions": [
+      {
+        "name": "Alberta Arts District",
+        "location": "Inner Northeast Portland",
+        "propertyType": "Multifamily · NE Portland",
+        "units": 12,
+        "pricePerUnit": "$200,000",
+        "repType": "Seller rep"
+      },
+      {
+        "name": "Division / Clinton",
+        "location": "Inner Southeast Portland",
+        "propertyType": "Multifamily · SE Portland",
+        "units": 8,
+        "pricePerUnit": "$218,750",
+        "repType": "Seller rep"
+      },
+      {
+        "name": "Mid-Willamette Valley",
+        "location": "Salem, Oregon",
+        "propertyType": "Multifamily · Salem",
+        "units": 24,
+        "pricePerUnit": "$129,167",
+        "repType": "Seller rep"
+      }
+    ]
+  },
+  "cta": {
+    "seller": {
+      "eyebrow": "Thinking about selling?",
+      "headlineHtml": "You don't need to be ready<br />to list to <em>start a conversation.</em>",
+      "body": "Most of my best engagements start years before a sale. Let's talk about your property, your timeline, and what the market looks like right now.",
+      "button": { "label": "Let's talk", "href": "/contact" }
+    },
+    "buyer": {
+      "eyebrow": "For buyers",
+      "headline": "Looking for multifamily in Portland or the Valley?",
+      "body": "I work with a select number of qualified buyers and can often connect them with properties before they hit the market. Let's talk about what you're looking for.",
+      "button": { "label": "Connect with Tyler", "href": "/contact" }
+    }
+  }
+}

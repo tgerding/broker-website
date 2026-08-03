@@ -1,0 +1,33 @@
+{
+  "left": {
+    "eyebrow": "Get in touch",
+    "headlineHtml": "You don't need<br />to be ready to sell<br /><em>to reach out.</em>",
+    "intro": "Whether you're years away from a decision, just curious about the market, or ready to move now — I'm happy to have an honest conversation. No pressure. No pitch.",
+    "note": "Tyler Gerding · Principal Broker · Multifamily Advisor\nLicensed in Oregon · Gerding Commercial Real Estate\ngerdingcre.com"
+  },
+  "form": {
+    "title": "Send a message",
+    "interestOptions": [
+      "I'm thinking about selling a property",
+      "I'm looking to buy",
+      "I have a market question",
+      "Just connecting for now"
+    ],
+    "disclaimer": "I typically respond within one business day. No pressure — this is just a conversation.",
+    "submitLabel": "Send message"
+  },
+  "reassurance": [
+    {
+      "title": "No obligation",
+      "body": "Reaching out doesn't mean you're committing to anything. Most of my best client relationships started with a simple question years before any transaction."
+    },
+    {
+      "title": "Honest advice",
+      "body": "If the market isn't right for you right now, I'll tell you. I'd rather be the advisor you trust for years than the broker who pushes a deal that isn't in your interest."
+    },
+    {
+      "title": "Real experience",
+      "body": "Fifteen years in Portland multifamily. Over a decade as an owner myself. I bring genuine perspective to every conversation — not a sales script."
+    }
+  ]
+}

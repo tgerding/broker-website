@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "eyebrow": "Portland, Oregon · Multifamily Advisor",
+    "headlineHtml": "Some decisions<br /><em>span generations.</em><br />Make them wisely.",
+    "sub": "I help Portland apartment owners and investors across the Willamette Valley make confident decisions about their buildings — whether that means selling, holding, or planning what comes next.",
+    "primaryCta": { "label": "Let's have a conversation", "href": "/contact" },
+    "secondaryCta": { "label": "Learn about my approach →", "href": "/about" },
+    "image": "/images/hero-portland.jpg",
+    "imageAlt": "Portland Oregon aerial"
+  },
+  "philosophy": {
+    "eyebrow": "A different approach",
+    "headline": "Most brokers want to close a deal. I want to help you make the right decision — even if that means not selling right now.",
+    "body": "For fifteen years I worked alongside Portland apartment owners through some of the most consequential decisions of their financial lives. I've also sat on the other side of that table as an owner myself for over a decade. That perspective changes everything about how I advise, negotiate, and show up for my clients."
+  },
+  "owner": {
+    "eyebrow": "Why this is different",
+    "headline": "I grew up watching my parents build something with apartment buildings. Now I help others do the same.",
+    "intro": "My parents owned a fourplex and a fiveplex. I watched them work hard to make those buildings successful — and I saw what that investment meant for our family. Years later, I had the privilege of selling those buildings for them and helping them grow their portfolio.",
+    "quote": "Apartment buildings aren't just assets. For most owners, they represent years of effort, real sacrifice, and a meaningful piece of your family's future.",
+    "outro": "I've been an owner myself for over ten years. And when it does come time to sell — I'm a tenacious negotiator. I know this market, I know the buyers, and I know how to get my clients the outcome they deserve.",
+    "cta": { "label": "My story & approach →", "href": "/about" },
+    "image": "/images/owner-building.jpg",
+    "imageAlt": "Portland apartment building"
+  },
+  "howIWork": {
+    "eyebrow": "How I work",
+    "headline": "Thoughtful process.<br />Decisive execution.",
+    "sub": "From the first conversation to closing day — and long after. I'm not a transactional broker. I'm a long-term partner who happens to be very good at getting deals done.",
+    "steps": [
+      { "number": "01", "title": "Listen", "body": "I start by understanding your goals and what this property means to you — not by pitching a listing." },
+      { "number": "02", "title": "Advise", "body": "I share honest market perspective and help you weigh all options — sell, hold, exchange, or reposition." },
+      { "number": "03", "title": "Negotiate", "body": "Anyone can list a property. The question is whether your advisor can really fight for you when it counts." },
+      { "number": "04", "title": "Stay close", "body": "I'm a long-term partner, not a one-deal broker. My clients call me years before a sale — and after." }
+    ],
+    "quote": "Sellers spend months evaluating their property. Most spend far less time choosing who will negotiate for them — and that decision often matters more than any other."
+  },
+  "markets": [
+    {
+      "slug": "portland-proper",
+      "label": "Inner city",
+      "nameHtml": "Portland<br />Proper",
+      "sub": "NE · SE · N · NW · Inner Eastside",
+      "image": "/images/market-portland.jpg",
+      "imageAlt": "Portland Oregon"
+    },
+    {
+      "slug": "portland-metro",
+      "label": "Suburbs",
+      "nameHtml": "Portland<br />Metro",
+      "sub": "Lake Oswego · Beaverton · Gresham · Hillsboro · Clackamas",
+      "image": "/images/market-all.jpg",
+      "imageAlt": "Portland Metro"
+    },
+    {
+      "slug": "willamette",
+      "label": "I-5 corridor",
+      "nameHtml": "Willamette<br />Valley",
+      "sub": "Newberg · McMinnville · Salem · Albany",
+      "image": "/images/market-valley.jpg",
+      "imageAlt": "Willamette Valley Oregon"
+    }
+  ],
+  "recentlyClosed": {
+    "eyebrow": "Recently closed",
+    "headline": "A track record built across<br />Portland and the Valley.",
+    "viewAllLabel": "View all transactions →",
+    "transactions": [
+      {
+        "name": "Alberta Arts District",
+        "location": "Inner Northeast Portland",
+        "propertyType": "Multifamily · NE Portland",
+        "units": 12,
+        "pricePerUnit": "$200,000",
+        "repType": "Seller rep"
+      },
+      {
+        "name": "Division / Clinton",
+        "location": "Inner Southeast Portland",
+        "propertyType": "Multifamily · SE Portland",
+        "units": 8,
+        "pricePerUnit": "$218,750",
+        "repType": "Seller rep"
+      },
+      {
+        "name": "Mid-Willamette Valley",
+        "location": "Salem, Oregon",
+        "propertyType": "Multifamily · Salem",
+        "units": 24,
+        "pricePerUnit": "$129,167",
+        "repType": "Seller rep"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Start a conversation",
+    "headlineHtml": "You don't need to be<br />ready to sell to<br /><em>reach out.</em>",
+    "body": "Whether you're years away from a decision or ready to move now — I'm happy to sit down, talk through your situation, and share honest perspective. No pressure. No pitch.",
+    "button": { "label": "Let's talk", "href": "/contact" }
+  }
+}

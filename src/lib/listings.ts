@@ -15,7 +15,8 @@ export function getAllListingSlugs(): string[] {
 export function getListingBySlug(slug: string): Listing {
   const filePath = path.join(listingsDir, `${slug}.json`);
   const raw = fs.readFileSync(filePath, "utf8");
-  return JSON.parse(raw) as Listing;
+  const data = JSON.parse(raw) as Listing;
+  return { ...data, slug };
 }
 
 export function getAllListings(): Listing[] {

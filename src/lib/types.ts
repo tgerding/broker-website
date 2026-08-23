@@ -29,6 +29,13 @@ export interface ClosedTransaction {
 }
 
 /* ============================================================
+   settings.json
+   ============================================================ */
+export interface SettingsContent {
+  enabled: boolean;
+}
+
+/* ============================================================
    site.json
    ============================================================ */
 export interface SiteContent {

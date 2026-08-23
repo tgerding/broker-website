@@ -64,6 +64,13 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .callout p { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 19px; font-style: italic; color: var(--evergreen); line-height: 1.5; font-weight: 300; }
 
 /* ============================================================
+   COMING SOON
+   ============================================================ */
+.coming-soon { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; padding: 48px 24px; background: linear-gradient(180deg, #E4ECE4 0%, var(--cream) 60%); text-align: center; }
+.coming-soon img { height: auto; width: min(320px, 70vw); }
+.coming-soon-label { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: clamp(28px, 5vw, 44px); color: var(--evergreen); letter-spacing: 0.06em; font-weight: 300; }
+
+/* ============================================================
    NAV
    ============================================================ */
 .site-nav { background: var(--cream); display: flex; align-items: center; justify-content: space-between; padding: 0 64px; height: 96px; border-bottom: 0.5px solid var(--border-light); position: sticky; top: 0; z-index: 100; }

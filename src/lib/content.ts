@@ -1,3 +1,4 @@
+import settingsJson from "../../content/settings.json";
 import siteJson from "../../content/site.json";
 import homeJson from "../../content/home.json";
 import aboutJson from "../../content/about.json";
@@ -7,6 +8,7 @@ import propertiesJson from "../../content/properties.json";
 import listingsPageJson from "../../content/listings-page.json";
 
 import type {
+  SettingsContent,
   SiteContent,
   HomeContent,
   AboutContent,
@@ -16,6 +18,7 @@ import type {
   ListingsPageContent,
 } from "./types";
 
+export const settings: SettingsContent = settingsJson as SettingsContent;
 export const site: SiteContent = siteJson as SiteContent;
 export const home: HomeContent = homeJson as HomeContent;
 export const about: AboutContent = aboutJson as AboutContent;

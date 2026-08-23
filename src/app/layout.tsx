@@ -3,8 +3,9 @@ import { Cormorant_Garamond, Jost } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
+import { ComingSoon } from "@/components/layout/ComingSoon";
 import { NetlifyFormsHidden } from "@/components/forms/NetlifyFormsHidden";
-import { site } from "@/lib/content";
+import { settings, site } from "@/lib/content";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -37,10 +38,16 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cormorant.variable} ${jost.variable}`}>
       <body>
-        <Nav />
-        {children}
-        <Footer />
-        <NetlifyFormsHidden />
+        {settings.enabled ? (
+          <>
+            <Nav />
+            {children}
+            <Footer />
+            <NetlifyFormsHidden />
+          </>
+        ) : (
+          <ComingSoon />
+        )}
       </body>
     </html>
   );

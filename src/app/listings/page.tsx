@@ -51,7 +51,7 @@ export default function ListingsPage() {
         <h2
           style={{
             fontFamily:
-              "var(--font-cormorant), 'Cormorant Garamond', serif",
+              "var(--font-headings), serif",
             fontSize: "34px",
             fontWeight: 400,
             marginBottom: "8px",

@@ -7,9 +7,21 @@
   --color-dark-green: var(--dark-green);
   --color-cream: var(--cream);
   --color-gold: var(--gold);
-  --font-serif: var(--font-cormorant), "Cormorant Garamond", serif;
-  --font-sans: var(--font-jost), "Jost", sans-serif;
+  --font-serif: var(--font-headings);
+  --font-sans: var(--font-body);
 }
+
+/* ============================================================
+   FONTS
+   ------------------------------------------------------------
+   Both typefaces come from content/theme.json — that file lists
+   which faces you can choose from and what each one affects.
+
+     --font-headings  the serif, for every heading and pull-quote
+     --font-body      the sans, for everything else
+
+   Never name a typeface in this stylesheet; use these two.
+   ============================================================ */
 
 /* ============================================================
    COLORS
@@ -59,7 +71,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; scroll-behavior: smooth; }
 body {
-  font-family: var(--font-jost), "Jost", sans-serif;
+  font-family: var(--font-body), sans-serif;
   font-weight: 300;
   background: var(--cream);
   color: var(--dark-green);
@@ -67,33 +79,33 @@ body {
 }
 img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-decoration: none; }
-button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
+button { cursor: pointer; font-family: var(--font-body), sans-serif; }
 
 /* ============================================================
    SHARED PRIMITIVES
    ============================================================ */
 .eyebrow { font-size: 14px; font-weight: 500; letter-spacing: 0.22em; color: var(--gold); display: block; margin-bottom: 10px; text-transform: uppercase; }
 .rule { width: 32px; height: 1px; background: var(--gold); margin-bottom: 24px; }
-.serif { font-family: var(--font-cormorant), "Cormorant Garamond", serif; }
+.serif { font-family: var(--font-headings), serif; }
 
-.btn-outline { display: inline-block; border: 0.5px solid var(--dark-green); color: var(--dark-green); padding: 12px 26px; font-size: 14px; letter-spacing: 0.18em; font-family: var(--font-jost), "Jost", sans-serif; font-weight: 400; background: transparent; transition: background 0.2s, color 0.2s; text-transform: uppercase; }
+.btn-outline { display: inline-block; border: 0.5px solid var(--dark-green); color: var(--dark-green); padding: 12px 26px; font-size: 14px; letter-spacing: 0.18em; font-family: var(--font-body), sans-serif; font-weight: 400; background: transparent; transition: background 0.2s, color 0.2s; text-transform: uppercase; }
 .btn-outline:hover { background: var(--dark-green); color: var(--cream); }
-.btn-outline-cream { display: inline-block; border: 0.5px solid var(--cream); color: var(--cream); padding: 12px 26px; font-size: 14px; letter-spacing: 0.18em; font-family: var(--font-jost), "Jost", sans-serif; font-weight: 400; background: transparent; transition: background 0.2s, color 0.2s; text-transform: uppercase; }
+.btn-outline-cream { display: inline-block; border: 0.5px solid var(--cream); color: var(--cream); padding: 12px 26px; font-size: 14px; letter-spacing: 0.18em; font-family: var(--font-body), sans-serif; font-weight: 400; background: transparent; transition: background 0.2s, color 0.2s; text-transform: uppercase; }
 .btn-outline-cream:hover { background: var(--cream); color: var(--dark-green); }
-.btn-outline-gold { display: inline-block; border: 0.5px solid var(--gold); color: var(--gold); padding: 12px 26px; font-size: 14px; letter-spacing: 0.18em; font-family: var(--font-jost), "Jost", sans-serif; font-weight: 400; background: transparent; text-transform: uppercase; }
+.btn-outline-gold { display: inline-block; border: 0.5px solid var(--gold); color: var(--gold); padding: 12px 26px; font-size: 14px; letter-spacing: 0.18em; font-family: var(--font-body), sans-serif; font-weight: 400; background: transparent; text-transform: uppercase; }
 .btn-outline-gold:hover { background: var(--gold); color: var(--dark-green); }
-.btn-text-link { font-size: 14px; color: var(--gold); text-decoration: underline; text-underline-offset: 4px; background: none; border: none; padding: 0; cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
+.btn-text-link { font-size: 14px; color: var(--gold); text-decoration: underline; text-underline-offset: 4px; background: none; border: none; padding: 0; cursor: pointer; font-family: var(--font-body), sans-serif; }
 .btn-nav-cta { padding: 8px 18px; font-size: 14px; }
 
 .callout { border-left: 2px solid var(--gold); padding: 14px 20px; margin: 22px 0; background: var(--gold-wash); }
-.callout p { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 19px; font-style: italic; color: var(--dark-green); line-height: 1.5; font-weight: 300; }
+.callout p { font-family: var(--font-headings), serif; font-size: 19px; font-style: italic; color: var(--dark-green); line-height: 1.5; font-weight: 300; }
 
 /* ============================================================
    COMING SOON
    ============================================================ */
 .coming-soon { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; padding: 48px 24px; background: linear-gradient(180deg, var(--coming-soon-background) 0%, var(--cream) 60%); text-align: center; }
 .coming-soon img { height: auto; width: min(320px, 70vw); }
-.coming-soon-label { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: clamp(28px, 5vw, 44px); color: var(--dark-green); letter-spacing: 0.06em; font-weight: 300; }
+.coming-soon-label { font-family: var(--font-headings), serif; font-size: clamp(28px, 5vw, 44px); color: var(--dark-green); letter-spacing: 0.06em; font-weight: 300; }
 
 /* ============================================================
    NAV
@@ -115,7 +127,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .site-footer { background: var(--footer-green); padding: 56px 64px 32px; }
 .footer-inner { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 48px; padding-bottom: 40px; border-bottom: 0.5px solid var(--cream-line); margin-bottom: 24px; }
 .footer-logo img { height: 104px; width: auto; margin-bottom: 20px; }
-.footer-tagline { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 14px; font-style: italic; color: var(--cream-subtle); font-weight: 300; line-height: 1.65; }
+.footer-tagline { font-family: var(--font-headings), serif; font-size: 14px; font-style: italic; color: var(--cream-subtle); font-weight: 300; line-height: 1.65; }
 .footer-col-label { font-size: 14px; letter-spacing: 0.22em; color: var(--gold); margin-bottom: 16px; display: block; text-transform: uppercase; }
 .footer-links-list { list-style: none; }
 .footer-links-list li { margin-bottom: 10px; }
@@ -155,7 +167,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
    ============================================================ */
 .hero { display: grid; grid-template-columns: 5fr 7fr; min-height: 560px; }
 .hero-left { background: var(--cream); padding: 80px 64px; display: flex; flex-direction: column; justify-content: center; }
-.hero-h1 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 52px; font-weight: 300; line-height: 1.1; color: var(--dark-green); margin-bottom: 22px; }
+.hero-h1 { font-family: var(--font-headings), serif; font-size: 52px; font-weight: 300; line-height: 1.1; color: var(--dark-green); margin-bottom: 22px; }
 .hero-h1 em { font-style: italic; color: var(--dark-green-light); }
 .hero-sub { font-size: 14px; line-height: 1.9; color: var(--body-text); max-width: 320px; margin-bottom: 36px; }
 .hero-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
@@ -166,7 +178,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 /* HOME — PHILOSOPHY */
 .phil { background: var(--dark-green); padding: 56px 64px; }
 .phil-inner { display: grid; grid-template-columns: 200px 1fr; gap: 64px; align-items: start; }
-.phil-h2 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 26px; font-weight: 300; color: var(--cream); line-height: 1.3; margin-bottom: 14px; }
+.phil-h2 { font-family: var(--font-headings), serif; font-size: 26px; font-weight: 300; color: var(--cream); line-height: 1.3; margin-bottom: 14px; }
 .phil-p { font-size: 14px; color: var(--cream-muted); line-height: 1.9; }
 
 /* HOME — OWNER */
@@ -174,23 +186,23 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .owner-photo { position: relative; overflow: hidden; min-height: 520px; }
 .owner-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 .owner-text { background: var(--panel-cream); padding: 72px 64px; display: flex; flex-direction: column; justify-content: center; }
-.owner-h2 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 32px; font-weight: 400; line-height: 1.2; color: var(--dark-green); margin-bottom: 20px; }
+.owner-h2 { font-family: var(--font-headings), serif; font-size: 32px; font-weight: 400; line-height: 1.2; color: var(--dark-green); margin-bottom: 20px; }
 .owner-p { font-size: 14px; line-height: 1.9; color: var(--body-text); margin-bottom: 14px; }
 
 /* HOME — HOW I WORK */
 .how { background: var(--dark-green); padding: 68px 64px; }
 .how-hdr { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: end; margin-bottom: 40px; }
-.how-h2 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 36px; font-weight: 300; color: var(--cream); line-height: 1.2; }
+.how-h2 { font-family: var(--font-headings), serif; font-size: 36px; font-weight: 300; color: var(--cream); line-height: 1.2; }
 .how-sub { font-size: 14px; color: var(--cream-muted); line-height: 1.85; }
 .how-steps { display: grid; grid-template-columns: repeat(4,1fr); border-top: 0.5px solid var(--cream-line); }
 .step { padding: 32px 24px 32px 0; border-right: 0.5px solid var(--cream-line); }
 .step:last-child { border-right: none; }
 .step:not(:first-child) { padding-left: 24px; }
-.step-num { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 50px; color: var(--dark-green-light); line-height: 1; margin-bottom: 14px; font-weight: 300; }
+.step-num { font-family: var(--font-headings), serif; font-size: 50px; color: var(--dark-green-light); line-height: 1; margin-bottom: 14px; font-weight: 300; }
 .step-title { font-size: 14px; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 8px; text-transform: uppercase; }
 .step-body { font-size: 14px; color: var(--cream-muted); line-height: 1.8; }
 .neg-callout { margin-top: 36px; border-left: 2px solid var(--gold); padding: 16px 24px; background: var(--gold-wash); }
-.neg-callout p { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 19px; font-style: italic; color: var(--cream-strong); line-height: 1.55; font-weight: 300; }
+.neg-callout p { font-family: var(--font-headings), serif; font-size: 19px; font-style: italic; color: var(--cream-strong); line-height: 1.55; font-weight: 300; }
 
 /* HOME + MARKETS — MARKET BUTTONS */
 .markets { display: grid; grid-template-columns: repeat(3,1fr); height: 320px; }
@@ -199,7 +211,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .mkt-btn:hover img { transform: scale(1.04); }
 .mkt-overlay { position: absolute; inset: 0; background: linear-gradient(to top, var(--green-strong) 0%, var(--green-line-strong) 65%, var(--green-wash) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 30px; }
 .mkt-label { font-size: 14px; letter-spacing: 0.22em; color: var(--gold); margin-bottom: 7px; text-transform: uppercase; }
-.mkt-name { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 28px; font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 8px; }
+.mkt-name { font-family: var(--font-headings), serif; font-size: 28px; font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 8px; }
 .mkt-sub { font-size: 14px; color: var(--cream-muted); margin-bottom: 10px; letter-spacing: 0.06em; }
 .mkt-arrow { font-size: 14px; letter-spacing: 0.14em; color: var(--cream-muted); border-bottom: 0.5px solid var(--cream-faint); padding-bottom: 2px; display: inline-block; }
 .mkt-divider { position: absolute; top: 15%; bottom: 15%; right: 0; width: 0.5px; background: var(--cream-faint); }
@@ -207,7 +219,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 /* HOME — RECENTLY CLOSED */
 .closed { background: var(--cream); padding: 80px 64px; }
 .closed-hdr { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; }
-.closed-h2 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 36px; font-weight: 400; color: var(--dark-green); line-height: 1.1; }
+.closed-h2 { font-family: var(--font-headings), serif; font-size: 36px; font-weight: 400; color: var(--dark-green); line-height: 1.1; }
 .closed-link { font-size: 14px; letter-spacing: 0.14em; color: var(--dark-green); opacity: 0.5; border-bottom: 0.5px solid var(--green-faint); padding-bottom: 1px; text-transform: uppercase; }
 .closed-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
 .card { background: white; border: 0.5px solid var(--green-line); }
@@ -216,7 +228,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .rep-badge { position: absolute; top: 14px; right: 14px; background: var(--green-strong); color: var(--cream-strong); font-size: 14px; letter-spacing: 0.12em; padding: 4px 8px; text-transform: uppercase; }
 .card-body { padding: 20px; }
 .card-type { font-size: 14px; letter-spacing: 0.16em; color: var(--gold); margin-bottom: 6px; text-transform: uppercase; }
-.card-name { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 20px; color: var(--dark-green); margin-bottom: 3px; line-height: 1.2; }
+.card-name { font-family: var(--font-headings), serif; font-size: 20px; color: var(--dark-green); margin-bottom: 3px; line-height: 1.2; }
 .card-loc { font-size: 14px; color: var(--body-text); margin-bottom: 14px; }
 .card-meta { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; padding-top: 12px; border-top: 0.5px solid var(--green-line); }
 .meta-label { font-size: 14px; letter-spacing: 0.14em; color: var(--green-muted); margin-bottom: 3px; text-transform: uppercase; }
@@ -227,7 +239,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 /* HOME — CTA */
 .cta { background: var(--dark-green); padding: 88px 64px; }
 .cta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-.cta-h2 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 42px; font-weight: 300; color: var(--cream); line-height: 1.15; margin-bottom: 16px; }
+.cta-h2 { font-family: var(--font-headings), serif; font-size: 42px; font-weight: 300; color: var(--cream); line-height: 1.15; margin-bottom: 16px; }
 .cta-h2 em { font-style: italic; color: var(--cream-subtle); }
 .cta-p { font-size: 14px; color: var(--cream-muted); line-height: 1.9; margin-bottom: 32px; }
 
@@ -235,7 +247,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
    ABOUT PAGE
    ============================================================ */
 .page-hdr { background: var(--dark-green); padding: 80px 64px; }
-.page-hdr h1 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 56px; font-weight: 300; color: var(--cream); line-height: 1.05; margin-bottom: 16px; }
+.page-hdr h1 { font-family: var(--font-headings), serif; font-size: 56px; font-weight: 300; color: var(--cream); line-height: 1.05; margin-bottom: 16px; }
 .page-hdr h1 em { font-style: italic; color: var(--cream-subtle); }
 .page-hdr p { font-size: 14px; color: var(--cream-muted); line-height: 1.85; max-width: 540px; }
 
@@ -244,7 +256,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .bio-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 .bio-photo-placeholder { color: var(--cream-line); font-size: 14px; letter-spacing: 0.2em; text-align: center; line-height: 2.2; text-transform: uppercase; }
 .bio-text { background: var(--cream); padding: 72px 64px; display: flex; flex-direction: column; justify-content: center; }
-.bio-h2 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 38px; font-weight: 400; line-height: 1.15; color: var(--dark-green); margin-bottom: 22px; }
+.bio-h2 { font-family: var(--font-headings), serif; font-size: 38px; font-weight: 400; line-height: 1.15; color: var(--dark-green); margin-bottom: 22px; }
 .bio-p { font-size: 14px; line-height: 1.9; color: var(--body-text); margin-bottom: 14px; }
 
 .creds { background: var(--panel-cream); padding: 56px 64px; display: grid; grid-template-columns: repeat(3,1fr); gap: 0; }
@@ -252,28 +264,28 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .cred:last-child { border-right: none; padding-right: 0; }
 .cred:not(:first-child) { padding-left: 48px; }
 .cred-label { font-size: 14px; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 14px; display: block; text-transform: uppercase; }
-.cred-val { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 56px; color: var(--dark-green); font-weight: 300; line-height: 1; margin-bottom: 10px; }
-.cred-val-sm { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 30px; color: var(--dark-green); font-weight: 400; line-height: 1.15; margin-bottom: 10px; }
+.cred-val { font-family: var(--font-headings), serif; font-size: 56px; color: var(--dark-green); font-weight: 300; line-height: 1; margin-bottom: 10px; }
+.cred-val-sm { font-family: var(--font-headings), serif; font-size: 30px; color: var(--dark-green); font-weight: 400; line-height: 1.15; margin-bottom: 10px; }
 .cred-desc { font-size: 14px; color: var(--body-text); line-height: 1.65; }
 
 .persp { background: var(--cream); padding: 88px 64px; }
 .persp-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 88px; align-items: start; }
-.persp-h2 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 46px; font-weight: 400; line-height: 1.1; color: var(--dark-green); margin-bottom: 20px; }
+.persp-h2 { font-family: var(--font-headings), serif; font-size: 46px; font-weight: 400; line-height: 1.1; color: var(--dark-green); margin-bottom: 20px; }
 .persp-p { font-size: 14px; color: var(--body-text); line-height: 1.9; margin-bottom: 14px; }
 
 .neg { background: var(--dark-green); padding: 88px 64px; }
 .neg-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 88px; align-items: start; }
-.neg-h2 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 46px; font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 18px; }
+.neg-h2 { font-family: var(--font-headings), serif; font-size: 46px; font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 18px; }
 .neg-p { font-size: 14px; color: var(--cream-muted); line-height: 1.9; margin-bottom: 14px; }
 .neg-points { list-style: none; }
 .np { padding: 20px 0; border-bottom: 0.5px solid var(--cream-line); display: flex; gap: 20px; align-items: flex-start; }
 .np:first-child { border-top: 0.5px solid var(--cream-line); }
-.np-num { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 28px; color: var(--gold); font-weight: 300; flex-shrink: 0; line-height: 1; padding-top: 2px; }
+.np-num { font-family: var(--font-headings), serif; font-size: 28px; color: var(--gold); font-weight: 300; flex-shrink: 0; line-height: 1; padding-top: 2px; }
 .np-title { font-size: 14px; letter-spacing: 0.16em; color: var(--cream); margin-bottom: 6px; text-transform: uppercase; }
 .np-body { font-size: 14px; color: var(--cream-subtle); line-height: 1.75; }
 
 .about-cta { background: var(--panel-cream); padding: 88px 64px; text-align: center; }
-.about-cta h2 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 46px; font-weight: 300; color: var(--dark-green); margin-bottom: 16px; line-height: 1.1; }
+.about-cta h2 { font-family: var(--font-headings), serif; font-size: 46px; font-weight: 300; color: var(--dark-green); margin-bottom: 16px; line-height: 1.1; }
 .about-cta p { font-size: 14px; color: var(--body-text); line-height: 1.85; max-width: 480px; margin: 0 auto 36px; }
 
 /* ============================================================
@@ -285,7 +297,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .market-item:last-child { border-bottom: 0.5px solid var(--green-line); }
 .market-item-left { padding: 56px 52px 56px 64px; border-right: 0.5px solid var(--green-line); }
 .market-item-tag { font-size: 14px; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 12px; display: block; text-transform: uppercase; }
-.market-item-name { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 38px; font-weight: 400; color: var(--dark-green); line-height: 1.05; margin-bottom: 14px; }
+.market-item-name { font-family: var(--font-headings), serif; font-size: 38px; font-weight: 400; color: var(--dark-green); line-height: 1.05; margin-bottom: 14px; }
 .market-item-sub { font-size: 14px; color: var(--body-text); line-height: 1.85; }
 .market-item-right { padding: 56px 64px; }
 .market-item-photo { height: 240px; margin-bottom: 28px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; background: var(--photo-backdrop); }
@@ -300,7 +312,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .market-item.alt .market-item-right { background: var(--panel-cream); }
 
 .mkt-cta { background: var(--dark-green); padding: 80px 64px; text-align: center; }
-.mkt-cta h2 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 44px; font-weight: 300; color: var(--cream); margin-bottom: 16px; line-height: 1.1; }
+.mkt-cta h2 { font-family: var(--font-headings), serif; font-size: 44px; font-weight: 300; color: var(--cream); margin-bottom: 16px; line-height: 1.1; }
 .mkt-cta h2 em { font-style: italic; color: var(--cream-subtle); }
 .mkt-cta p { font-size: 14px; color: var(--cream-muted); line-height: 1.85; max-width: 480px; margin: 0 auto 36px; }
 
@@ -309,7 +321,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
    ============================================================ */
 .split { display: grid; grid-template-columns: 1fr 1fr; min-height: calc(100vh - 96px); }
 .cl { background: var(--dark-green); padding: 80px 64px; display: flex; flex-direction: column; justify-content: space-between; }
-.cl-h1 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 50px; font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 20px; }
+.cl-h1 { font-family: var(--font-headings), serif; font-size: 50px; font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 20px; }
 .cl-h1 em { font-style: italic; color: var(--cream-subtle); }
 .cl-intro { font-size: 14px; color: var(--cream-muted); line-height: 1.9; margin-bottom: 48px; max-width: 380px; }
 .cl-note { font-size: 14px; color: var(--cream-faint); line-height: 1.75; border-top: 0.5px solid var(--cream-line); padding-top: 22px; }
@@ -320,7 +332,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .fg { display: flex; flex-direction: column; gap: 7px; }
 .flabel { font-size: 14px; letter-spacing: 0.18em; color: var(--green-muted); text-transform: uppercase; }
-.fi, .fselect, .ftextarea { border: 0.5px solid var(--green-line-strong); background: var(--cream); padding: 12px 14px; font-size: 14px; font-family: var(--font-jost), "Jost", sans-serif; color: var(--dark-green); outline: none; width: 100%; font-weight: 300; transition: border-color 0.2s; }
+.fi, .fselect, .ftextarea { border: 0.5px solid var(--green-line-strong); background: var(--cream); padding: 12px 14px; font-size: 14px; font-family: var(--font-body), sans-serif; color: var(--dark-green); outline: none; width: 100%; font-weight: 300; transition: border-color 0.2s; }
 .fi:focus, .fselect:focus, .ftextarea:focus { border-color: var(--gold); }
 .fi::placeholder, .ftextarea::placeholder { color: var(--green-faint); }
 .fselect { appearance: none; -webkit-appearance: none; color: var(--dark-green); }
@@ -344,7 +356,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 
 .active-section { background: var(--cream); padding: 80px 64px; }
 .section-hdr { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 44px; }
-.section-h2 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 38px; font-weight: 400; color: var(--dark-green); line-height: 1.1; }
+.section-h2 { font-family: var(--font-headings), serif; font-size: 38px; font-weight: 400; color: var(--dark-green); line-height: 1.1; }
 .section-note { font-size: 14px; color: var(--body-text); max-width: 240px; text-align: right; line-height: 1.75; }
 
 .expand-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
@@ -356,10 +368,10 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .expand-status { position: absolute; top: 14px; left: 14px; font-size: 14px; letter-spacing: 0.16em; padding: 4px 10px; background: var(--dark-green); color: var(--cream); text-transform: uppercase; }
 .expand-card-body { padding: 24px; }
 .expand-type { font-size: 14px; letter-spacing: 0.16em; color: var(--gold); margin-bottom: 6px; text-transform: uppercase; }
-.expand-name { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 24px; color: var(--dark-green); margin-bottom: 4px; line-height: 1.2; }
+.expand-name { font-family: var(--font-headings), serif; font-size: 24px; color: var(--dark-green); margin-bottom: 4px; line-height: 1.2; }
 .expand-loc { font-size: 14px; color: var(--body-text); margin-bottom: 18px; }
 .expand-meta { display: grid; grid-template-columns: 1fr 1fr; padding-top: 16px; border-top: 0.5px solid var(--green-line); gap: 10px; }
-.expand-btn { width: 100%; padding: 14px; background: var(--panel-cream); border: none; border-top: 0.5px solid var(--green-line); font-size: 14px; letter-spacing: 0.16em; color: var(--dark-green); cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; display: flex; align-items: center; justify-content: center; gap: 8px; transition: background 0.2s; text-transform: uppercase; }
+.expand-btn { width: 100%; padding: 14px; background: var(--panel-cream); border: none; border-top: 0.5px solid var(--green-line); font-size: 14px; letter-spacing: 0.16em; color: var(--dark-green); cursor: pointer; font-family: var(--font-body), sans-serif; display: flex; align-items: center; justify-content: center; gap: 8px; transition: background 0.2s; text-transform: uppercase; }
 .expand-btn:hover { background: var(--panel-cream-dark); }
 .expand-btn.open { background: var(--dark-green); color: var(--cream); }
 
@@ -379,11 +391,11 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .unit-table th { text-align: left; padding: 8px 0; font-size: 14px; letter-spacing: 0.14em; color: var(--green-muted); font-weight: 400; border-bottom: 0.5px solid var(--green-line); text-transform: uppercase; }
 .unit-table td { padding: 11px 0; border-bottom: 0.5px solid var(--green-wash); color: var(--dark-green); }
 .detail-cta { background: var(--panel-cream); padding: 22px 32px; display: flex; justify-content: space-between; align-items: center; border-top: 0.5px solid var(--green-line); margin-top: 32px; }
-.detail-cta-text { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 16px; font-style: italic; color: var(--dark-green); font-weight: 300; }
+.detail-cta-text { font-family: var(--font-headings), serif; font-size: 16px; font-style: italic; color: var(--dark-green); font-weight: 300; }
 
 .offmarket-box { background: var(--panel-cream); border: 0.5px solid var(--green-line); padding: 40px 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; margin-top: 36px; }
 .offmarket-label { font-size: 14px; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 12px; display: block; text-transform: uppercase; }
-.offmarket-h { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 28px; font-weight: 400; color: var(--dark-green); line-height: 1.2; }
+.offmarket-h { font-family: var(--font-headings), serif; font-size: 28px; font-weight: 400; color: var(--dark-green); line-height: 1.2; }
 .offmarket-p { font-size: 14px; color: var(--body-text); line-height: 1.85; }
 
 .closed-section { background: var(--panel-cream); padding: 80px 64px; }
@@ -393,7 +405,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .closed-photo img { width: 100%; height: 100%; object-fit: cover; }
 .closed-body { padding: 22px; }
 .closed-type { font-size: 14px; letter-spacing: 0.16em; color: var(--gold); margin-bottom: 6px; text-transform: uppercase; }
-.closed-name { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 21px; color: var(--dark-green); margin-bottom: 4px; line-height: 1.2; }
+.closed-name { font-family: var(--font-headings), serif; font-size: 21px; color: var(--dark-green); margin-bottom: 4px; line-height: 1.2; }
 .closed-loc { font-size: 14px; color: var(--body-text); margin-bottom: 16px; }
 .closed-meta { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; padding-top: 14px; border-top: 0.5px solid var(--green-line); }
 .closed-meta-label { font-size: 14px; letter-spacing: 0.14em; color: var(--green-muted); margin-bottom: 4px; text-transform: uppercase; }
@@ -403,7 +415,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 
 .prop-cta { background: var(--dark-green); padding: 80px 64px; }
 .prop-cta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-.prop-cta h2 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 42px; font-weight: 300; color: var(--cream); line-height: 1.15; margin-bottom: 16px; }
+.prop-cta h2 { font-family: var(--font-headings), serif; font-size: 42px; font-weight: 300; color: var(--cream); line-height: 1.15; margin-bottom: 16px; }
 .prop-cta h2 em { font-style: italic; color: var(--cream-subtle); }
 .prop-cta p { font-size: 14px; color: var(--cream-muted); line-height: 1.9; margin-bottom: 32px; }
 
@@ -411,7 +423,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
    LISTINGS PAGE (directory)
    ============================================================ */
 .page-header { background: var(--dark-green); padding: 72px 64px 64px; }
-.page-header h1 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 48px; font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 16px; }
+.page-header h1 { font-family: var(--font-headings), serif; font-size: 48px; font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 16px; }
 .page-header p { font-size: 14px; color: var(--cream-muted); line-height: 1.85; max-width: 500px; }
 
 .listings-section { background: var(--cream); padding: 80px 64px; }
@@ -426,7 +438,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .status-sold { background: var(--green-soft); color: var(--cream-soft); }
 .listing-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
 .listing-type { font-size: 14px; letter-spacing: 0.18em; color: var(--gold); margin-bottom: 8px; text-transform: uppercase; }
-.listing-name { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 20px; font-weight: 400; color: var(--dark-green); margin-bottom: 4px; line-height: 1.2; }
+.listing-name { font-family: var(--font-headings), serif; font-size: 20px; font-weight: 400; color: var(--dark-green); margin-bottom: 4px; line-height: 1.2; }
 .listing-location { font-size: 14px; color: var(--body-text); margin-bottom: 16px; }
 .listing-details { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 16px 0; border-top: 0.5px solid var(--green-line); border-bottom: 0.5px solid var(--green-line); margin-bottom: 16px; }
 .listing-detail-label { font-size: 14px; letter-spacing: 0.16em; color: var(--green-muted); margin-bottom: 4px; text-transform: uppercase; }
@@ -434,22 +446,22 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .listing-card a.btn-outline { align-self: flex-start; margin-top: auto; font-size: 14px; }
 
 .listings-empty { grid-column: 1 / -1; padding: 72px 40px; text-align: center; border: 0.5px dashed var(--green-line-strong); }
-.listings-empty h3 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 28px; font-weight: 400; margin-bottom: 14px; color: var(--dark-green); }
+.listings-empty h3 { font-family: var(--font-headings), serif; font-size: 28px; font-weight: 400; margin-bottom: 14px; color: var(--dark-green); }
 .listings-empty p { font-size: 14px; color: var(--body-text); line-height: 1.85; max-width: 420px; margin: 0 auto 28px; }
 
 .past-listings { background: var(--panel-cream); padding: 80px 64px; }
 .past-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 36px; }
 .past-card { background: var(--cream); border: 0.5px solid var(--green-line); padding: 20px; }
 .past-card-type { font-size: 14px; letter-spacing: 0.16em; color: var(--green-muted); margin-bottom: 8px; text-transform: uppercase; }
-.past-card-name { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 17px; color: var(--dark-green); margin-bottom: 4px; line-height: 1.2; }
+.past-card-name { font-family: var(--font-headings), serif; font-size: 17px; color: var(--dark-green); margin-bottom: 4px; line-height: 1.2; }
 .past-card-location { font-size: 14px; color: var(--body-text); margin-bottom: 12px; }
 .past-card-detail { font-size: 14px; color: var(--green-muted); }
 
 .notify { background: var(--dark-green); padding: 64px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
-.notify h2 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 34px; font-weight: 300; color: var(--cream); line-height: 1.2; margin-bottom: 12px; }
+.notify h2 { font-family: var(--font-headings), serif; font-size: 34px; font-weight: 300; color: var(--cream); line-height: 1.2; margin-bottom: 12px; }
 .notify p { font-size: 14px; color: var(--cream-muted); line-height: 1.85; }
 .notify-form { display: flex; flex-direction: column; gap: 12px; }
-.notify-form input { border: 0.5px solid var(--cream-faint); background: var(--cream-wash); padding: 11px 14px; font-size: 14px; font-family: var(--font-jost), "Jost", sans-serif; color: var(--cream); outline: none; transition: border-color 0.2s; }
+.notify-form input { border: 0.5px solid var(--cream-faint); background: var(--cream-wash); padding: 11px 14px; font-size: 14px; font-family: var(--font-body), sans-serif; color: var(--cream); outline: none; transition: border-color 0.2s; }
 .notify-form input:focus { border-color: var(--gold); }
 .notify-form input::placeholder { color: var(--cream-faint); }
 .notify-form button { align-self: flex-start; margin-top: 6px; }
@@ -461,16 +473,16 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .listing-hero img.listing-hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .listing-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, var(--green-strong) 0%, var(--green-line) 60%); }
 .listing-hero-content { position: relative; z-index: 1; padding: 0 64px 48px; width: 100%; display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; }
-.listing-hero-title { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 44px; font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 8px; }
+.listing-hero-title { font-family: var(--font-headings), serif; font-size: 44px; font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 8px; }
 .listing-hero-location { font-size: 14px; color: var(--cream-muted); letter-spacing: 0.08em; }
 .listing-hero-price { text-align: right; }
 .listing-hero-price-label { font-size: 14px; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 6px; text-transform: uppercase; }
-.listing-hero-price-val { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 38px; color: var(--cream); font-weight: 300; line-height: 1; }
+.listing-hero-price-val { font-family: var(--font-headings), serif; font-size: 38px; color: var(--cream); font-weight: 300; line-height: 1; }
 
 .listing-page-body { display: grid; grid-template-columns: 1fr 320px; gap: 0; align-items: start; }
 .listing-main { padding: 64px; border-right: 0.5px solid var(--green-line); }
 .listing-section-title { font-size: 14px; letter-spacing: 0.22em; color: var(--gold); margin-bottom: 10px; text-transform: uppercase; }
-.listing-h2 { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 30px; font-weight: 400; color: var(--dark-green); margin-bottom: 20px; }
+.listing-h2 { font-family: var(--font-headings), serif; font-size: 30px; font-weight: 400; color: var(--dark-green); margin-bottom: 20px; }
 .listing-description { font-size: 14px; color: var(--body-text); line-height: 1.9; margin-bottom: 16px; }
 .listing-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 36px 0; }
 .listing-photo-item { height: 200px; background: var(--photo-backdrop); overflow: hidden; }
@@ -480,12 +492,12 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .highlights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 32px 0; }
 .highlight { background: var(--panel-cream); padding: 18px 20px; border: 0.5px solid var(--green-line); }
 .highlight-label { font-size: 14px; letter-spacing: 0.18em; color: var(--green-muted); margin-bottom: 6px; text-transform: uppercase; }
-.highlight-val { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 22px; color: var(--dark-green); font-weight: 400; line-height: 1; }
+.highlight-val { font-family: var(--font-headings), serif; font-size: 22px; color: var(--dark-green); font-weight: 400; line-height: 1; }
 
 .listing-sidebar { padding: 48px 36px; background: var(--panel-cream); position: sticky; top: 100px; }
 .sidebar-status { font-size: 14px; letter-spacing: 0.2em; color: var(--cream); background: var(--dark-green); padding: 6px 12px; display: inline-block; margin-bottom: 24px; text-transform: uppercase; }
 .sidebar-price-label { font-size: 14px; letter-spacing: 0.18em; color: var(--gold); margin-bottom: 6px; text-transform: uppercase; }
-.sidebar-price { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 34px; color: var(--dark-green); font-weight: 400; line-height: 1; margin-bottom: 28px; }
+.sidebar-price { font-family: var(--font-headings), serif; font-size: 34px; color: var(--dark-green); font-weight: 400; line-height: 1; margin-bottom: 28px; }
 .sidebar-details { margin-bottom: 32px; }
 .sidebar-detail { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 0; border-bottom: 0.5px solid var(--green-line); font-size: 14px; }
 .sidebar-detail-label { color: var(--green-muted); }

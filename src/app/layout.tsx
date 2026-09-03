@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Jost } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -7,21 +6,7 @@ import { ComingSoon } from "@/components/layout/ComingSoon";
 import { NetlifyFormsHidden } from "@/components/forms/NetlifyFormsHidden";
 import { settings, site } from "@/lib/content";
 import { themeRootCss } from "@/lib/theme-css";
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  style: ["normal", "italic"],
-  variable: "--font-cormorant",
-  display: "swap",
-});
-
-const jost = Jost({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  variable: "--font-jost",
-  display: "swap",
-});
+import { fontVariableClassName } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: {
@@ -37,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${jost.variable}`}>
+    <html lang="en" className={fontVariableClassName()}>
       <head>
         {/* Colors come from content/theme.json — edit that file, not this. */}
         <style dangerouslySetInnerHTML={{ __html: themeRootCss() }} />

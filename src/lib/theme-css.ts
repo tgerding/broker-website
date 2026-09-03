@@ -11,7 +11,7 @@ import { theme } from "./content";
  * value, and nothing has to be special-cased when a new color is added.
  */
 export function themeRootCss(): string {
-  const lines = Object.entries(theme).map(([key, color]) => {
+  const lines = Object.entries(theme.colors).map(([key, color]) => {
     const name = toCssName(key);
     return `--${name}: ${color.value}; --${name}-rgb: ${toRgbChannels(color.value)};`;
   });

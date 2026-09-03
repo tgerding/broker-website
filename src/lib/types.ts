@@ -41,12 +41,32 @@ export interface ThemeColor {
   usedFor: string;
 }
 
+/** One editable font slot. `options` lists the accepted values as documentation. */
+export interface ThemeFont {
+  value: string;
+  options: string;
+  usedFor: string;
+}
+
+/**
+ * Everything visual that is editable without touching code — see
+ * content/theme.json, where each entry documents what it affects.
+ */
+export interface ThemeContent {
+  /** Typeface choice. Valid values come from the registry in src/lib/fonts.ts. */
+  fonts: {
+    headings: ThemeFont;
+    bodyText: ThemeFont;
+  };
+  colors: ThemeColors;
+}
+
 /**
  * Every color on the site. Keys become CSS custom properties in kebab-case
  * (darkGreen -> --dark-green), injected by src/app/layout.tsx. globals.css
  * derives its translucent shades from these and must not hardcode colors.
  */
-export interface ThemeContent {
+export interface ThemeColors {
   darkGreen: ThemeColor;
   darkGreenLight: ThemeColor;
   photoBackdrop: ThemeColor;

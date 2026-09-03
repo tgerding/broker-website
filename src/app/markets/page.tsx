@@ -28,7 +28,7 @@ export default function MarketsPage() {
         <EyebrowHeader eyebrow={markets.sectionBreak.eyebrow} />
         <h2
           style={{
-            fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+            fontFamily: "var(--font-headings), serif",
             fontSize: "36px",
             fontWeight: 400,
             color: "var(--evergreen)",

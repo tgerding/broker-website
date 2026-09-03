@@ -170,7 +170,7 @@ export default function PropertiesPage() {
             <div
               style={{
                 fontFamily:
-                  "var(--font-cormorant), 'Cormorant Garamond', serif",
+                  "var(--font-headings), serif",
                 fontSize: "26px",
                 color: "var(--cream)",
                 fontWeight: 300,

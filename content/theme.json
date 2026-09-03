@@ -1,46 +1,60 @@
 {
-  "darkGreen": {
-    "value": "#2F3A34",
-    "usedFor": "The signature dark green. Fills the hero, the page header bands, and the 'Let's talk' sections — and is also the color of nearly every heading and piece of dark text on the site. Changing this changes the most."
+  "fonts": {
+    "headings": {
+      "value": "cormorant",
+      "options": "cormorant | ebGaramond | playfair | lora",
+      "usedFor": "Every heading on the site: the homepage headline, section headings, property names, the large step numbers, and the italic pull-quotes. All four options are serif faces in the same spirit."
+    },
+    "bodyText": {
+      "value": "jost",
+      "options": "jost | inter | workSans | dmSans",
+      "usedFor": "Everything that isn't a heading: paragraphs, the small uppercase labels, buttons, navigation, table figures, and form fields. All four options are clean sans-serif faces."
+    }
   },
-  "darkGreenLight": {
-    "value": "#4a6057",
-    "usedFor": "A softer green used in exactly two places: the italic words in the homepage headline ('span generations.'), and the large 01/02/03/04 step numbers in the 'How I work' section."
-  },
-  "photoBackdrop": {
-    "value": "#3d5048",
-    "usedFor": "Sits behind every photo on the site. Visible for a moment while a photo loads, and permanently anywhere a photo is missing. Keep this close to darkGreen."
-  },
-  "cream": {
-    "value": "#F7F3EC",
-    "usedFor": "The off-white page background and the top navigation bar. Also the color of text and headings that sit on top of the dark green sections."
-  },
-  "panelCream": {
-    "value": "#EFECE4",
-    "usedFor": "A slightly deeper cream that lifts inset panels off the page background — the off-market box, the 'Recently closed' band, the credentials strip on the About page, and the alternating market rows."
-  },
-  "panelCreamDark": {
-    "value": "#E5E1D8",
-    "usedFor": "Only used when hovering the expand button on an active property card."
-  },
-  "gold": {
-    "value": "#C4A96A",
-    "usedFor": "The accent. All the small uppercase labels above section headings, the short divider rules beneath them, the quote marks on pull-quotes, and the underline on whichever nav link you're currently on."
-  },
-  "bodyText": {
-    "value": "#5a6e64",
-    "usedFor": "Ordinary paragraph text sitting on cream backgrounds. A muted green-grey rather than plain grey."
-  },
-  "footerGreen": {
-    "value": "#222d27",
-    "usedFor": "The footer background only. Deliberately a shade darker than darkGreen so the footer reads as separate from the section above it."
-  },
-  "comingSoonBackground": {
-    "value": "#E4ECE4",
-    "usedFor": "Background of the 'Coming Soon' holding page — the page visitors see while \"enabled\" is false in settings.json. Not visible once the site is live."
-  },
-  "errorRed": {
-    "value": "#b34747",
-    "usedFor": "The warning message on the contact form when a message fails to send. The only non-green/cream/gold color on the site."
+  "colors": {
+    "darkGreen": {
+      "value": "#2F3A34",
+      "usedFor": "The signature dark green. Fills the hero, the page header bands, and the 'Let's talk' sections — and is also the color of nearly every heading and piece of dark text on the site. Changing this changes the most."
+    },
+    "darkGreenLight": {
+      "value": "#4a6057",
+      "usedFor": "A softer green used in exactly two places: the italic words in the homepage headline ('span generations.'), and the large 01/02/03/04 step numbers in the 'How I work' section."
+    },
+    "photoBackdrop": {
+      "value": "#3d5048",
+      "usedFor": "Sits behind every photo on the site. Visible for a moment while a photo loads, and permanently anywhere a photo is missing. Keep this close to darkGreen."
+    },
+    "cream": {
+      "value": "#F7F3EC",
+      "usedFor": "The off-white page background and the top navigation bar. Also the color of text and headings that sit on top of the dark green sections."
+    },
+    "panelCream": {
+      "value": "#EFECE4",
+      "usedFor": "A slightly deeper cream that lifts inset panels off the page background — the off-market box, the 'Recently closed' band, the credentials strip on the About page, and the alternating market rows."
+    },
+    "panelCreamDark": {
+      "value": "#E5E1D8",
+      "usedFor": "Only used when hovering the expand button on an active property card."
+    },
+    "gold": {
+      "value": "#C4A96A",
+      "usedFor": "The accent. All the small uppercase labels above section headings, the short divider rules beneath them, the quote marks on pull-quotes, and the underline on whichever nav link you're currently on."
+    },
+    "bodyText": {
+      "value": "#5a6e64",
+      "usedFor": "Ordinary paragraph text sitting on cream backgrounds. A muted green-grey rather than plain grey."
+    },
+    "footerGreen": {
+      "value": "#222d27",
+      "usedFor": "The footer background only. Deliberately a shade darker than darkGreen so the footer reads as separate from the section above it."
+    },
+    "comingSoonBackground": {
+      "value": "#E4ECE4",
+      "usedFor": "Background of the 'Coming Soon' holding page — the page visitors see while \"enabled\" is false in settings.json. Not visible once the site is live."
+    },
+    "errorRed": {
+      "value": "#b34747",
+      "usedFor": "The warning message on the contact form when a message fails to send. The only non-green/cream/gold color on the site."
+    }
   }
 }

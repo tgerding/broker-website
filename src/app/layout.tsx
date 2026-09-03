@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ComingSoon } from "@/components/layout/ComingSoon";
 import { NetlifyFormsHidden } from "@/components/forms/NetlifyFormsHidden";
 import { settings, site } from "@/lib/content";
+import { themeRootCss } from "@/lib/theme-css";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -37,6 +38,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${cormorant.variable} ${jost.variable}`}>
+      <head>
+        {/* Colors come from content/theme.json — edit that file, not this. */}
+        <style dangerouslySetInnerHTML={{ __html: themeRootCss() }} />
+      </head>
       <body>
         {settings.enabled ? (
           <>

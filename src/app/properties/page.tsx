@@ -161,8 +161,8 @@ export default function PropertiesPage() {
           </div>
           <div
             style={{
-              background: "rgba(247,243,236,0.05)",
-              border: "0.5px solid rgba(247,243,236,0.12)",
+              background: "var(--cream-wash)",
+              border: "0.5px solid var(--cream-line)",
               padding: "44px",
             }}
           >
@@ -183,7 +183,7 @@ export default function PropertiesPage() {
             <p
               style={{
                 fontSize: "14px",
-                color: "rgba(247,243,236,0.55)",
+                color: "var(--cream-muted)",
                 lineHeight: 1.85,
                 marginBottom: "24px",
               }}

@@ -22,7 +22,6 @@ export function ClosedTransactionCard({ transaction, variant = "home" }: Props) 
             sizes="(max-width: 900px) 100vw, 33vw"
           />
         )}
-        <span className="sold-badge">Sold</span>
         <span className="rep-badge">{transaction.repType}</span>
       </div>
       <div className={isProperties ? "closed-body" : "card-body"}>

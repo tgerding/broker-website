@@ -72,7 +72,7 @@ export function ContactBlocks({ variant = "home", className, locationSub }: Prop
             {locationSub && (
               <>
                 <br />
-                <span style={{ fontSize: "14px", color: "rgba(247,243,236,0.45)" }}>
+                <span style={{ fontSize: "14px", color: "var(--cream-subtle)" }}>
                   {locationSub}
                 </span>
               </>

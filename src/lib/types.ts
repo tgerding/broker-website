@@ -33,6 +33,34 @@ export interface ClosedTransaction {
 }
 
 /* ============================================================
+   theme.json
+   ============================================================ */
+/** One editable color. `usedFor` is documentation for whoever edits the file. */
+export interface ThemeColor {
+  value: string;
+  usedFor: string;
+}
+
+/**
+ * Every color on the site. Keys become CSS custom properties in kebab-case
+ * (darkGreen -> --dark-green), injected by src/app/layout.tsx. globals.css
+ * derives its translucent shades from these and must not hardcode colors.
+ */
+export interface ThemeContent {
+  darkGreen: ThemeColor;
+  darkGreenLight: ThemeColor;
+  photoBackdrop: ThemeColor;
+  cream: ThemeColor;
+  panelCream: ThemeColor;
+  panelCreamDark: ThemeColor;
+  gold: ThemeColor;
+  bodyText: ThemeColor;
+  footerGreen: ThemeColor;
+  comingSoonBackground: ThemeColor;
+  errorRed: ThemeColor;
+}
+
+/* ============================================================
    settings.json
    ============================================================ */
 export interface SettingsContent {

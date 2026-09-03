@@ -19,7 +19,7 @@ export function MobileNavToggle() {
       <SheetContent side="right" className="bg-cream p-0 border-l-0">
         <SheetTitle className="sr-only">Navigation</SheetTitle>
         <button
-          className="absolute top-4 right-4 p-2 text-evergreen"
+          className="absolute top-4 right-4 p-2 text-dark-green"
           onClick={() => setOpen(false)}
           aria-label="Close menu"
         >

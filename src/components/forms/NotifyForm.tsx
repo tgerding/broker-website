@@ -71,7 +71,7 @@ export function NotifyForm() {
         {submitting ? "Submitting…" : listingsPage.notify.submitLabel}
       </button>
       {error && (
-        <p style={{ color: "rgba(247,243,236,0.85)", fontSize: "14px" }}>
+        <p style={{ color: "var(--cream-strong)", fontSize: "14px" }}>
           {error}
         </p>
       )}

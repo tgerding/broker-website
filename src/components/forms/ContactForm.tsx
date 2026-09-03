@@ -170,7 +170,7 @@ export function ContactForm() {
       </div>
 
       {error && (
-        <p style={{ color: "#b34747", fontSize: "14px", marginTop: "8px" }}>
+        <p style={{ color: "var(--error-red)", fontSize: "14px", marginTop: "8px" }}>
           {error}
         </p>
       )}

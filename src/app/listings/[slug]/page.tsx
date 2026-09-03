@@ -3,7 +3,12 @@ import { getAllListingSlugs, getListingBySlug } from "@/lib/listings";
 import { ListingDetail } from "@/components/listings/ListingDetail";
 
 export function generateStaticParams() {
-  return getAllListingSlugs().map((slug) => ({ slug }));
+  const slugs = getAllListingSlugs();
+  // output: "export" rejects a dynamic route that yields zero params, and
+  // content/listings/ is empty whenever nothing is on the market. Emit one
+  // inert slug in that case — the component below notFound()s it, and it
+  // disappears the moment a real listing file is added.
+  return (slugs.length > 0 ? slugs : ["none"]).map((slug) => ({ slug }));
 }
 
 export const dynamicParams = false;

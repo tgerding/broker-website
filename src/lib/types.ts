@@ -261,6 +261,9 @@ export interface PropertiesContent {
   activeSection: {
     eyebrow: string;
     headline: string;
+    /** Replaces `headline` when there are no active listings. */
+    headlineEmpty: string;
+    /** Shown alongside the listings; hidden when there are none to click. */
     note: string;
   };
   offMarket: {

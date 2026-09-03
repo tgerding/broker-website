@@ -67,31 +67,22 @@ export default function PropertiesPage() {
         <div className="section-hdr">
           <div>
             <EyebrowHeader eyebrow={properties.activeSection.eyebrow} />
-            <div className="section-h2">{properties.activeSection.headline}</div>
+            <div className="section-h2">
+              {activeListings.length > 0
+                ? properties.activeSection.headline
+                : properties.activeSection.headlineEmpty}
+            </div>
           </div>
-          <p className="section-note">{properties.activeSection.note}</p>
+          {activeListings.length > 0 && (
+            <p className="section-note">{properties.activeSection.note}</p>
+          )}
         </div>
 
-        {activeListings.length > 0 ? (
+        {activeListings.length > 0 && (
           <div className="expand-grid">
             {activeListings.map((l) => (
               <ExpandableListingCard key={l.slug} listing={l} />
             ))}
-          </div>
-        ) : (
-          <div
-            className="listings-empty"
-            style={{
-              padding: "60px 40px",
-              border: "0.5px dashed var(--border-mid)",
-              textAlign: "center",
-            }}
-          >
-            <h3>New listings coming soon.</h3>
-            <p>
-              I&apos;m actively working with owners across the Portland metro and
-              Willamette Valley.
-            </p>
           </div>
         )}
 

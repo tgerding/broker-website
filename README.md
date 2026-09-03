@@ -109,8 +109,25 @@ Start the name with the date you listed it, then a short name:
 - Use only lowercase letters, numbers and dashes. **No spaces.**
 - The newest date shows up first on the site.
 
-The file name also becomes the web address, so the file above appears at
-`/listings/2026-09-14-raleigh-heights/`.
+### The file name is the web address
+
+The file name does double duty: it also becomes that listing's address on the
+website. Drop the `.json` and put `/listings/` in front:
+
+```
+file:  content/listings/2026-09-14-raleigh-heights.json
+
+page:  gerdingcre.com/listings/2026-09-14-raleigh-heights/
+```
+
+Two things follow from that:
+
+- **There is no field to fill in for the address.** You'll notice the example
+  below has no `"slug"` or `"url"` line. It doesn't need one — the file name is
+  the only thing that sets the address. Adding such a line does nothing.
+- **Renaming the file changes the address.** If you've already emailed someone
+  a link to a listing, renaming the file breaks that link. Leave the name alone
+  once it's live.
 
 ### Copy this to create a listing
 
@@ -173,7 +190,7 @@ Change the values, keep the field names exactly as they are.
 Two steps:
 
 1. **Delete** the file from `content/listings/`.
-2. **Add** it to `content/closed/` using the sold format below.
+2. **Add** it to `content/closed/` using the sold format below if wanted.
 
 ---
 

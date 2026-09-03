@@ -18,8 +18,11 @@ export interface ContactInfoBlock {
   icon: "phone" | "email" | "location" | "linkedin";
 }
 
-/** One file per transaction in content/closed/ — see src/lib/closed.ts */
-export interface ClosedTransaction {
+/**
+ * A closed transaction as authored in content/closed/*.json.
+ * Deliberately has no `slug`: readContentDir derives it from the filename.
+ */
+export interface ClosedTransactionFile {
   name: string;
   location: string;
   propertyType: string;
@@ -28,9 +31,10 @@ export interface ClosedTransaction {
   pricePerUnit: string;
   repType: string;
   image?: string;
-  /** Injected from the filename by readContentDir. */
-  slug?: string;
 }
+
+/** A closed transaction as read back, carrying its filename-derived slug. */
+export type ClosedTransaction = ClosedTransactionFile & { slug: string };
 
 /* ============================================================
    theme.json
@@ -389,8 +393,14 @@ export interface UnitMixRow {
   marketRent: string;
 }
 
-export interface Listing {
-  slug: string;
+/**
+ * A listing as authored in content/listings/*.json.
+ *
+ * Deliberately has no `slug`. The filename is the slug and therefore the page
+ * URL — readContentFile spreads it in last, so a `slug` written into the file
+ * is silently overwritten. Authoring one would only mislead.
+ */
+export interface ListingFile {
   name: string;
   status: "active" | "pending" | "sold";
   neighborhood: string;
@@ -414,3 +424,6 @@ export interface Listing {
     gallery: string[];
   };
 }
+
+/** A listing as read back, carrying its filename-derived slug. */
+export type Listing = ListingFile & { slug: string };

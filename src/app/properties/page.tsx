@@ -46,6 +46,7 @@ export default function PropertiesPage() {
   const activeListings = getAllListings()
     .filter((l) => l.status !== "sold")
     .map(toSummary);
+  const hasActiveListings = activeListings.length > 0;
 
   return (
     <>
@@ -69,17 +70,17 @@ export default function PropertiesPage() {
           <div>
             <EyebrowHeader eyebrow={properties.activeSection.eyebrow} />
             <div className="section-h2">
-              {activeListings.length > 0
+              {hasActiveListings
                 ? properties.activeSection.headline
                 : properties.activeSection.headlineEmpty}
             </div>
           </div>
-          {activeListings.length > 0 && (
+          {hasActiveListings && (
             <p className="section-note">{properties.activeSection.note}</p>
           )}
         </div>
 
-        {activeListings.length > 0 && (
+        {hasActiveListings && (
           <div className="expand-grid">
             {activeListings.map((l) => (
               <ExpandableListingCard key={l.slug} listing={l} />
@@ -87,33 +88,37 @@ export default function PropertiesPage() {
           </div>
         )}
 
-        <section className="notify">
-          <div>
-            <EyebrowHeader eyebrow={properties.notify.eyebrow} />
-            <h2>{properties.notify.headline}</h2>
-            <p>{properties.notify.body}</p>
-          </div>
-          <NotifyForm />
-        </section>
+        {!hasActiveListings && (
+          <section className="notify">
+            <div>
+              <EyebrowHeader eyebrow={properties.notify.eyebrow} />
+              <h2>{properties.notify.headline}</h2>
+              <p>{properties.notify.body}</p>
+            </div>
+            <NotifyForm />
+          </section>
+        )}
 
-        <div className="offmarket-box">
-          <div>
-            <span className="offmarket-label">
-              {properties.offMarket.eyebrow}
-            </span>
-            <div className="offmarket-h">{properties.offMarket.headline}</div>
+        {hasActiveListings && (
+          <div className="offmarket-box">
+            <div>
+              <span className="offmarket-label">
+                {properties.offMarket.eyebrow}
+              </span>
+              <div className="offmarket-h">{properties.offMarket.headline}</div>
+            </div>
+            <div>
+              <p className="offmarket-p">{properties.offMarket.body}</p>
+              <Link
+                href={properties.offMarket.button.href}
+                className="btn-outline"
+                style={{ marginTop: "22px", display: "inline-block" }}
+              >
+                {properties.offMarket.button.label}
+              </Link>
+            </div>
           </div>
-          <div>
-            <p className="offmarket-p">{properties.offMarket.body}</p>
-            <Link
-              href={properties.offMarket.button.href}
-              className="btn-outline"
-              style={{ marginTop: "22px", display: "inline-block" }}
-            >
-              {properties.offMarket.button.label}
-            </Link>
-          </div>
-        </div>
+        )}
       </section>
 
       <section className="closed-section">
@@ -179,8 +184,7 @@ export default function PropertiesPage() {
             <EyebrowHeader eyebrow={properties.cta.buyer.eyebrow} />
             <div
               style={{
-                fontFamily:
-                  "var(--font-headings), serif",
+                fontFamily: "var(--font-headings), serif",
                 fontSize: "26px",
                 color: "var(--cream)",
                 fontWeight: 300,

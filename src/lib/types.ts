@@ -18,14 +18,18 @@ export interface ContactInfoBlock {
   icon: "phone" | "email" | "location" | "linkedin";
 }
 
+/** One file per transaction in content/closed/ — see src/lib/closed.ts */
 export interface ClosedTransaction {
   name: string;
   location: string;
   propertyType: string;
+  yearBuilt: string;
   units: number | string;
   pricePerUnit: string;
   repType: string;
   image?: string;
+  /** Injected from the filename by readContentDir. */
+  slug?: string;
 }
 
 /* ============================================================
@@ -108,7 +112,8 @@ export interface HomeContent {
     eyebrow: string;
     headline: string;
     viewAllLabel: string;
-    transactions: ClosedTransaction[];
+    /** How many of content/closed/ to feature on the home page. */
+    limit: number;
   };
   cta: {
     eyebrow: string;
@@ -267,7 +272,6 @@ export interface PropertiesContent {
   closedSection: {
     eyebrow: string;
     headline: string;
-    transactions: ClosedTransaction[];
   };
   cta: {
     seller: {

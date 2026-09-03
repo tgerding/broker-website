@@ -37,6 +37,12 @@ export function ClosedTransactionCard({ transaction, variant = "home" }: Props) 
         </div>
         <div className={isProperties ? "closed-meta" : "card-meta"}>
           <div>
+            <div className={isProperties ? "closed-meta-label" : "meta-label"}>Built</div>
+            <div className={isProperties ? "closed-meta-val" : "meta-val"}>
+              {transaction.yearBuilt}
+            </div>
+          </div>
+          <div>
             <div className={isProperties ? "closed-meta-label" : "meta-label"}>Units</div>
             <div className={isProperties ? "closed-meta-val" : "meta-val"}>
               {transaction.units}
@@ -44,7 +50,7 @@ export function ClosedTransactionCard({ transaction, variant = "home" }: Props) 
           </div>
           <div>
             <div className={isProperties ? "closed-meta-label" : "meta-label"}>
-              Price per unit
+              Price/unit
             </div>
             <div className={isProperties ? "closed-meta-val" : "meta-val"}>
               {transaction.pricePerUnit}

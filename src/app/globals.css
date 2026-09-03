@@ -194,7 +194,7 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .card-type { font-size: 14px; letter-spacing: 0.16em; color: var(--gold); margin-bottom: 6px; text-transform: uppercase; }
 .card-name { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 20px; color: var(--evergreen); margin-bottom: 3px; line-height: 1.2; }
 .card-loc { font-size: 14px; color: var(--text-body); margin-bottom: 14px; }
-.card-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding-top: 12px; border-top: 0.5px solid var(--border-light); }
+.card-meta { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; padding-top: 12px; border-top: 0.5px solid var(--border-light); }
 .meta-label { font-size: 14px; letter-spacing: 0.14em; color: var(--text-muted); margin-bottom: 3px; text-transform: uppercase; }
 .meta-val { font-size: 14px; color: var(--evergreen); font-weight: 400; }
 .card-inquiry { padding: 12px 20px; border-top: 0.5px solid var(--border-light); font-size: 14px; color: var(--text-body); display: flex; justify-content: space-between; align-items: center; }
@@ -366,12 +366,12 @@ button { cursor: pointer; font-family: var(--font-jost), "Jost", sans-serif; }
 .closed-section .closed-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 40px; }
 .closed-card { background: var(--cream); border: 0.5px solid var(--border-light); }
 .closed-photo { height: 190px; position: relative; overflow: hidden; background: var(--evergreen-mid); display: flex; align-items: center; justify-content: center; }
-.closed-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.closed-photo img { width: 100%; height: 100%; object-fit: cover; }
 .closed-body { padding: 22px; }
 .closed-type { font-size: 14px; letter-spacing: 0.16em; color: var(--gold); margin-bottom: 6px; text-transform: uppercase; }
 .closed-name { font-family: var(--font-cormorant), "Cormorant Garamond", serif; font-size: 21px; color: var(--evergreen); margin-bottom: 4px; line-height: 1.2; }
 .closed-loc { font-size: 14px; color: var(--text-body); margin-bottom: 16px; }
-.closed-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding-top: 14px; border-top: 0.5px solid var(--border-light); }
+.closed-meta { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; padding-top: 14px; border-top: 0.5px solid var(--border-light); }
 .closed-meta-label { font-size: 14px; letter-spacing: 0.14em; color: var(--text-muted); margin-bottom: 4px; text-transform: uppercase; }
 .closed-meta-val { font-size: 14px; color: var(--evergreen); font-weight: 400; }
 .closed-inquiry { padding: 14px 22px; border-top: 0.5px solid var(--border-light); font-size: 14px; color: var(--text-body); display: flex; justify-content: space-between; align-items: center; }

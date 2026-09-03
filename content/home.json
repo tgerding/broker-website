@@ -65,32 +65,7 @@
     "eyebrow": "Recently closed",
     "headline": "A track record built across<br />Portland and the Valley.",
     "viewAllLabel": "View all transactions →",
-    "transactions": [
-      {
-        "name": "Alberta Arts District",
-        "location": "Inner Northeast Portland",
-        "propertyType": "Multifamily · NE Portland",
-        "units": 12,
-        "pricePerUnit": "$200,000",
-        "repType": "Seller rep"
-      },
-      {
-        "name": "Division / Clinton",
-        "location": "Inner Southeast Portland",
-        "propertyType": "Multifamily · SE Portland",
-        "units": 8,
-        "pricePerUnit": "$218,750",
-        "repType": "Seller rep"
-      },
-      {
-        "name": "Mid-Willamette Valley",
-        "location": "Salem, Oregon",
-        "propertyType": "Multifamily · Salem",
-        "units": 24,
-        "pricePerUnit": "$129,167",
-        "repType": "Seller rep"
-      }
-    ]
+    "limit": 6
   },
   "cta": {
     "eyebrow": "Start a conversation",

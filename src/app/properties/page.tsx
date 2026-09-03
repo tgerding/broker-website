@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { properties } from "@/lib/content";
 import { getAllListings } from "@/lib/listings";
+import { getAllClosedTransactions } from "@/lib/closed";
 import { EyebrowHeader } from "@/components/marketing/EyebrowHeader";
 import { ClosedTransactionCard } from "@/components/listings/ClosedTransactionCard";
 import { ExpandableListingCard } from "@/components/listings/ExpandableListingCard";
@@ -140,9 +141,9 @@ export default function PropertiesPage() {
         </div>
 
         <div className="closed-grid">
-          {properties.closedSection.transactions.map((t) => (
+          {getAllClosedTransactions().map((t) => (
             <ClosedTransactionCard
-              key={t.name}
+              key={t.slug}
               transaction={t}
               variant="properties"
             />

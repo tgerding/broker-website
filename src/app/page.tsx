@@ -6,6 +6,7 @@ import { CalloutQuote } from "@/components/marketing/CalloutQuote";
 import { ContactBlocks } from "@/components/marketing/ContactBlocks";
 import { MarketButtons } from "@/components/marketing/MarketButtons";
 import { ClosedTransactionCard } from "@/components/listings/ClosedTransactionCard";
+import { getAllClosedTransactions } from "@/lib/closed";
 
 export default function HomePage() {
   return (
@@ -128,9 +129,11 @@ export default function HomePage() {
           </Link>
         </div>
         <div className="closed-grid">
-          {home.recentlyClosed.transactions.map((t) => (
-            <ClosedTransactionCard key={t.name} transaction={t} />
-          ))}
+          {getAllClosedTransactions()
+            .slice(0, home.recentlyClosed.limit)
+            .map((t) => (
+              <ClosedTransactionCard key={t.slug} transaction={t} />
+            ))}
         </div>
       </section>
 

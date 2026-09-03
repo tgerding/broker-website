@@ -1,26 +1,19 @@
-import fs from "node:fs";
-import path from "node:path";
+import {
+  listContentSlugs,
+  readContentDir,
+  readContentFile,
+} from "./content-dir";
 import type { Listing } from "./types";
 
-const listingsDir = path.join(process.cwd(), "content", "listings");
-
 export function getAllListingSlugs(): string[] {
-  if (!fs.existsSync(listingsDir)) return [];
-  return fs
-    .readdirSync(listingsDir)
-    .filter((f) => f.endsWith(".json"))
-    .map((f) => f.replace(/\.json$/, ""));
+  return listContentSlugs("listings");
 }
 
 export function getListingBySlug(slug: string): Listing {
-  const filePath = path.join(listingsDir, `${slug}.json`);
-  const raw = fs.readFileSync(filePath, "utf8");
-  const data = JSON.parse(raw) as Listing;
-  return { ...data, slug };
+  return readContentFile<Listing>("listings", slug);
 }
 
+/** Slugs are date-prefixed, so descending filename order is newest-first. */
 export function getAllListings(): Listing[] {
-  return getAllListingSlugs()
-    .map(getListingBySlug)
-    .sort((a, b) => b.slug.localeCompare(a.slug));
+  return readContentDir<Listing>("listings", "desc");
 }

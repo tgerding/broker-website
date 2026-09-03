@@ -352,8 +352,7 @@ minutes — the fonts have to be built into the site so they load fast.
 | `content/about.json` | The About page |
 | `content/markets.json` | The Markets page and its three market write-ups |
 | `content/contact.json` | The Contact page and the form's dropdown choices |
-| `content/properties.json` | Headings and intro text on the Properties page |
-| `content/listings-page.json` | The `/listings` page |
+| `content/properties.json` | Headings and intro text on the Properties page, plus the "be notified of new listings" block |
 
 You're editing the words between the quote marks. Leave the field names on the
 left alone.
@@ -449,7 +448,5 @@ Netlify dashboard under **Forms**.
   (`/listings/2026-09-14-raleigh-heights/`) because the filename serves as both
   the sort key and the URL. Separating them means giving files an explicit
   identifier and sorting on something else.
-- `content/listings-page.json` still holds four placeholder past properties,
-  and `/listings` isn't linked from the nav.
 - Font sizes and spacing are hardcoded throughout `globals.css`; only colors and
   typefaces are tokenized.

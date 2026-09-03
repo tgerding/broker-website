@@ -3,6 +3,7 @@ import { properties } from "@/lib/content";
 import { getAllListings } from "@/lib/listings";
 import { getAllClosedPropertys } from "@/lib/closed";
 import { EyebrowHeader } from "@/components/marketing/EyebrowHeader";
+import { NotifyForm } from "@/components/forms/NotifyForm";
 import { ClosedPropertyCard } from "@/components/listings/ClosedPropertyCard";
 import { ExpandableListingCard } from "@/components/listings/ExpandableListingCard";
 import type { ActiveListingSummary, Listing } from "@/lib/types";
@@ -85,6 +86,15 @@ export default function PropertiesPage() {
             ))}
           </div>
         )}
+
+        <section className="notify">
+          <div>
+            <EyebrowHeader eyebrow={properties.notify.eyebrow} />
+            <h2>{properties.notify.headline}</h2>
+            <p>{properties.notify.body}</p>
+          </div>
+          <NotifyForm />
+        </section>
 
         <div className="offmarket-box">
           <div>

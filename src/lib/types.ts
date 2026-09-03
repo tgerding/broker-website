@@ -319,6 +319,13 @@ export interface PropertiesContent {
     /** Shown alongside the listings; hidden when there are none to click. */
     note: string;
   };
+  /** The "notify me when new listings appear" form under Active listings. */
+  notify: {
+    eyebrow: string;
+    headline: string;
+    body: string;
+    submitLabel: string;
+  };
   offMarket: {
     eyebrow: string;
     headline: string;
@@ -342,44 +349,6 @@ export interface PropertiesContent {
       body: string;
       button: NavLink;
     };
-  };
-}
-
-/* ============================================================
-   listings-page.json (the "/listings" directory + past + notify)
-   ============================================================ */
-export interface PastProperty {
-  type: string;
-  name: string;
-  location: string;
-  detail: string;
-}
-
-export interface ListingsPageContent {
-  header: {
-    eyebrow: string;
-    headlineHtml: string;
-    intro: string;
-  };
-  active: {
-    eyebrow: string;
-    headline: string;
-    intro: string;
-    emptyStateTitle: string;
-    emptyStateBody: string;
-    emptyStateCta: NavLink;
-  };
-  past: {
-    eyebrow: string;
-    headline: string;
-    intro: string;
-    properties: PastProperty[];
-  };
-  notify: {
-    eyebrow: string;
-    headline: string;
-    body: string;
-    submitLabel: string;
   };
 }
 

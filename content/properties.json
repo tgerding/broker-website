@@ -10,11 +10,20 @@
     "headlineEmpty": "None currently available.",
     "note": "Click any listing to expand full property details, unit mix, and financials."
   },
+  "notify": {
+    "eyebrow": "Stay informed",
+    "headline": "Be the first to know when new listings come available.",
+    "body": "I work with a network of buyers and investors across the region. If you're looking for a specific type of property, let me know — often the best opportunities never hit the open market.",
+    "submitLabel": "Notify me"
+  },
   "offMarket": {
     "eyebrow": "Off-market opportunities",
     "headline": "Looking to buy? I frequently work with properties that never hit the open market.",
     "body": "Many of the properties I represent are sold quietly — before they're ever publicly listed. If you're a qualified buyer looking for multifamily in Portland or the Willamette Valley, let's talk about what I'm seeing and what may be coming available.",
-    "button": { "label": "Connect with Tyler", "href": "/contact" }
+    "button": {
+      "label": "Connect with Tyler",
+      "href": "/contact"
+    }
   },
   "closedSection": {
     "eyebrow": "Recently closed",
@@ -25,13 +34,19 @@
       "eyebrow": "Thinking about selling?",
       "headlineHtml": "You don't need to be ready<br />to list to <em>start a conversation.</em>",
       "body": "Most of my best engagements start years before a sale. Let's talk about your property, your timeline, and what the market looks like right now.",
-      "button": { "label": "Let's talk", "href": "/contact" }
+      "button": {
+        "label": "Let's talk",
+        "href": "/contact"
+      }
     },
     "buyer": {
       "eyebrow": "For buyers",
       "headline": "Looking for multifamily in Portland or the Valley?",
       "body": "I work with a select number of qualified buyers and can often connect them with properties before they hit the market. Let's talk about what you're looking for.",
-      "button": { "label": "Connect with Tyler", "href": "/contact" }
+      "button": {
+        "label": "Connect with Tyler",
+        "href": "/contact"
+      }
     }
   }
 }

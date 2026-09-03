@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { listingsPage } from "@/lib/content";
+import { properties } from "@/lib/content";
 
 const encode = (data: Record<string, string>) =>
   Object.keys(data)
@@ -68,7 +68,7 @@ export function NotifyForm() {
         className="btn-outline-cream"
         disabled={submitting}
       >
-        {submitting ? "Submitting…" : listingsPage.notify.submitLabel}
+        {submitting ? "Submitting…" : properties.notify.submitLabel}
       </button>
       {error && (
         <p style={{ color: "var(--cream-strong)", fontSize: "14px" }}>

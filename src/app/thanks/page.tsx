@@ -22,7 +22,7 @@ export default function ThanksPage() {
         <Link href="/" className="btn-outline">
           Back to home
         </Link>
-        <Link href="/listings" className="btn-outline">
+        <Link href="/properties" className="btn-outline">
           See current listings
         </Link>
       </div>

@@ -213,7 +213,7 @@ export function ListingDetail({ listing }: Props) {
       </div>
 
       <div className="listing-back">
-        <Link href="/listings">← Back to all listings</Link>
+        <Link href="/properties">← Back to all properties</Link>
       </div>
     </>
   );

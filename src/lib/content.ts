@@ -6,7 +6,6 @@ import aboutJson from "../../content/about.json";
 import marketsJson from "../../content/markets.json";
 import contactJson from "../../content/contact.json";
 import propertiesJson from "../../content/properties.json";
-import listingsPageJson from "../../content/listings-page.json";
 
 import type {
   ThemeContent,
@@ -17,7 +16,6 @@ import type {
   MarketsContent,
   ContactContent,
   PropertiesContent,
-  ListingsPageContent,
 } from "./types";
 
 export const theme: ThemeContent = themeJson as ThemeContent;
@@ -28,4 +26,3 @@ export const about: AboutContent = aboutJson as AboutContent;
 export const markets: MarketsContent = marketsJson as MarketsContent;
 export const contact: ContactContent = contactJson as ContactContent;
 export const properties: PropertiesContent = propertiesJson as PropertiesContent;
-export const listingsPage: ListingsPageContent = listingsPageJson as ListingsPageContent;

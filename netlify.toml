@@ -1,3 +1,12 @@
 [build]
   command = "npm run build"
   publish = "out"
+
+# /listings was removed — /properties covers both active listings and sold
+# properties. Anyone with the old link (it used to be reachable from listing
+# detail pages) lands in the right place instead of a 404. This matches the
+# bare path only, so /listings/<property>/ detail pages are unaffected.
+[[redirects]]
+  from = "/listings"
+  to = "/properties"
+  status = 301

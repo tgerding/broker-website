@@ -19,10 +19,13 @@ export interface ContactInfoBlock {
 }
 
 /**
- * A closed transaction as authored in content/closed/*.json.
- * Deliberately has no `slug`: readContentDir derives it from the filename.
+ * One file per transaction in content/closed/ — see src/lib/closed.ts.
+ *
+ * Ordering comes from the filename's number prefix, not from anything in
+ * here, and nothing links to an individual closed transaction, so unlike
+ * Listing this has no slug at all.
  */
-export interface ClosedTransactionFile {
+export interface ClosedTransaction {
   name: string;
   location: string;
   propertyType: string;
@@ -32,9 +35,6 @@ export interface ClosedTransactionFile {
   repType: string;
   image?: string;
 }
-
-/** A closed transaction as read back, carrying its filename-derived slug. */
-export type ClosedTransaction = ClosedTransactionFile & { slug: string };
 
 /* ============================================================
    theme.json

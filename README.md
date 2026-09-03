@@ -120,14 +120,12 @@ file:  content/listings/2026-09-14-raleigh-heights.json
 page:  gerdingcre.com/listings/2026-09-14-raleigh-heights/
 ```
 
-Two things follow from that:
+There's nothing to fill in for the address — the file name sets it, and the
+example below has no field for it.
 
-- **There is no field to fill in for the address.** You'll notice the example
-  below has no `"slug"` or `"url"` line. It doesn't need one — the file name is
-  the only thing that sets the address. Adding such a line does nothing.
-- **Renaming the file changes the address.** If you've already emailed someone
-  a link to a listing, renaming the file breaks that link. Leave the name alone
-  once it's live.
+One thing to watch: **renaming the file changes the address.** If you've
+already emailed someone a link to a listing, renaming its file breaks that
+link. Once a listing is live, leave the file name alone.
 
 ### Copy this to create a listing
 
@@ -412,10 +410,13 @@ assertions, so they document the shape rather than validate it — a malformed
 value fails at render or shows up blank, not at type-check.
 
 Per-file collections (`content/listings/`, `content/closed/`) are read at build
-time by `src/lib/content-dir.ts`, which injects each file's basename as `slug`
-and sorts by filename — descending for listings (date-prefixed, newest first),
-ascending for closed (number-prefixed). **A `slug` field inside those JSON
-files is ignored**; the filename always wins.
+time by `src/lib/content-dir.ts`, which sorts by filename — descending for
+listings (date-prefixed, newest first), ascending for closed
+(number-prefixed). Both ordering and, for listings, the page URL come from the
+filename; nothing inside a file affects either. `ListingFile` is what a file
+contains and `Listing` adds the filename-derived identifier the routes and
+card links need. `ClosedTransaction` has no such field — nothing links to an
+individual closed transaction.
 
 **Theme.** `content/theme.json` is the only source of colors and typefaces.
 `src/lib/theme-css.ts` turns its `colors` into a `:root` block injected by
@@ -433,8 +434,9 @@ them deliberately: `next/font` preloads every family it instantiates, which
 pushed ~500KB of unused fonts at every visitor.
 
 **Empty listings.** `output: "export"` rejects a dynamic route that yields zero
-params, so `src/app/listings/[slug]/page.tsx` emits one inert slug when
-`content/listings/` is empty, and `npm run build` deletes the resulting page.
+params, so `src/app/listings/[slug]/page.tsx` emits one inert placeholder
+route when `content/listings/` is empty, and `npm run build` deletes the
+resulting page.
 `netlify.toml` therefore runs `npm run build`, not `next build`.
 
 **Forms.** Netlify Forms. `src/components/forms/NetlifyFormsHidden.tsx` holds
@@ -443,9 +445,10 @@ Netlify dashboard under **Forms**.
 
 ### Known rough edges
 
-- Listing URLs include the date prefix (`/listings/2026-09-14-raleigh-heights/`)
-  because the slug is the filename. Decoupling them means adding an explicit
-  slug field and a separate sort key.
+- Listing URLs include the date prefix
+  (`/listings/2026-09-14-raleigh-heights/`) because the filename serves as both
+  the sort key and the URL. Separating them means giving files an explicit
+  identifier and sorting on something else.
 - `content/listings-page.json` still holds four placeholder past transactions,
   and `/listings` isn't linked from the nav.
 - Font sizes and spacing are hardcoded throughout `globals.css`; only colors and

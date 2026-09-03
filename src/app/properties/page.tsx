@@ -134,7 +134,7 @@ export default function PropertiesPage() {
         <div className="closed-grid">
           {getAllClosedTransactions().map((t) => (
             <ClosedTransactionCard
-              key={t.slug}
+              key={t.name}
               transaction={t}
               variant="properties"
             />

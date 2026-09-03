@@ -132,7 +132,7 @@ export default function HomePage() {
           {getAllClosedTransactions()
             .slice(0, home.recentlyClosed.limit)
             .map((t) => (
-              <ClosedTransactionCard key={t.slug} transaction={t} />
+              <ClosedTransactionCard key={t.name} transaction={t} />
             ))}
         </div>
       </section>

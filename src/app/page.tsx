@@ -5,8 +5,8 @@ import { EyebrowHeader } from "@/components/marketing/EyebrowHeader";
 import { CalloutQuote } from "@/components/marketing/CalloutQuote";
 import { ContactBlocks } from "@/components/marketing/ContactBlocks";
 import { MarketButtons } from "@/components/marketing/MarketButtons";
-import { ClosedTransactionCard } from "@/components/listings/ClosedTransactionCard";
-import { getAllClosedTransactions } from "@/lib/closed";
+import { ClosedPropertyCard } from "@/components/listings/ClosedPropertyCard";
+import { getAllClosedPropertys } from "@/lib/closed";
 
 export default function HomePage() {
   return (
@@ -129,10 +129,10 @@ export default function HomePage() {
           </Link>
         </div>
         <div className="closed-grid">
-          {getAllClosedTransactions()
+          {getAllClosedPropertys()
             .slice(0, home.recentlyClosed.limit)
             .map((t) => (
-              <ClosedTransactionCard key={t.name} transaction={t} />
+              <ClosedPropertyCard key={t.name} property={t} />
             ))}
         </div>
       </section>

@@ -19,13 +19,14 @@ export interface ContactInfoBlock {
 }
 
 /**
- * One file per transaction in content/closed/ — see src/lib/closed.ts.
+ * A property that has sold — one file per property in content/closed/, read
+ * by src/lib/closed.ts.
  *
  * Ordering comes from the filename's number prefix, not from anything in
- * here, and nothing links to an individual closed transaction, so unlike
- * Listing this has no slug at all.
+ * here, and nothing links to an individual sold property, so unlike Listing
+ * this has no slug at all.
  */
-export interface ClosedTransaction {
+export interface ClosedProperty {
   name: string;
   location: string;
   propertyType: string;
@@ -347,7 +348,7 @@ export interface PropertiesContent {
 /* ============================================================
    listings-page.json (the "/listings" directory + past + notify)
    ============================================================ */
-export interface PastTransaction {
+export interface PastProperty {
   type: string;
   name: string;
   location: string;
@@ -372,7 +373,7 @@ export interface ListingsPageContent {
     eyebrow: string;
     headline: string;
     intro: string;
-    transactions: PastTransaction[];
+    properties: PastProperty[];
   };
   notify: {
     eyebrow: string;

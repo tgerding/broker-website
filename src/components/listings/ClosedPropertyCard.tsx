@@ -1,50 +1,50 @@
 import Link from "next/link";
 import Image from "next/image";
-import type { ClosedTransaction } from "@/lib/types";
+import type { ClosedProperty } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 interface Props {
-  transaction: ClosedTransaction;
+  property: ClosedProperty;
   variant?: "home" | "properties";
 }
 
-export function ClosedTransactionCard({ transaction, variant = "home" }: Props) {
+export function ClosedPropertyCard({ property, variant = "home" }: Props) {
   const isProperties = variant === "properties";
   return (
     <div className={isProperties ? "closed-card" : "card"}>
       <div className={cn(isProperties ? "closed-photo" : "card-photo")}>
-        {transaction.image && (
+        {property.image && (
           <Image
-            src={transaction.image}
-            alt={transaction.name}
+            src={property.image}
+            alt={property.name}
             fill
             style={{ objectFit: "cover" }}
             sizes="(max-width: 900px) 100vw, 33vw"
           />
         )}
-        <span className="rep-badge">{transaction.repType}</span>
+        <span className="rep-badge">{property.repType}</span>
       </div>
       <div className={isProperties ? "closed-body" : "card-body"}>
         <div className={isProperties ? "closed-type" : "card-type"}>
-          {transaction.propertyType}
+          {property.propertyType}
         </div>
         <div className={isProperties ? "closed-name" : "card-name"}>
-          {transaction.name}
+          {property.name}
         </div>
         <div className={isProperties ? "closed-loc" : "card-loc"}>
-          {transaction.location}
+          {property.location}
         </div>
         <div className={isProperties ? "closed-meta" : "card-meta"}>
           <div>
             <div className={isProperties ? "closed-meta-label" : "meta-label"}>Built</div>
             <div className={isProperties ? "closed-meta-val" : "meta-val"}>
-              {transaction.yearBuilt}
+              {property.yearBuilt}
             </div>
           </div>
           <div>
             <div className={isProperties ? "closed-meta-label" : "meta-label"}>Units</div>
             <div className={isProperties ? "closed-meta-val" : "meta-val"}>
-              {transaction.units}
+              {property.units}
             </div>
           </div>
           <div>
@@ -52,7 +52,7 @@ export function ClosedTransactionCard({ transaction, variant = "home" }: Props) 
               Price/unit
             </div>
             <div className={isProperties ? "closed-meta-val" : "meta-val"}>
-              {transaction.pricePerUnit}
+              {property.pricePerUnit}
             </div>
           </div>
         </div>

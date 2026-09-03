@@ -13,10 +13,10 @@
     "emptyStateCta": { "label": "Get in touch", "href": "/contact" }
   },
   "past": {
-    "eyebrow": "Representative transactions",
+    "eyebrow": "Representative properties",
     "headline": "A track record built across Portland and the Valley.",
     "intro": "A sample of properties I've represented over fifteen years — from small duplexes to larger portfolio transactions. Specific details available upon request.",
-    "transactions": [
+    "properties": [
       { "type": "Sold · Multifamily", "name": "NE Portland", "location": "Alberta Arts District", "detail": "12 units" },
       { "type": "Sold · Multifamily", "name": "SE Portland", "location": "Division / Clinton", "detail": "8 units" },
       { "type": "Sold · Multifamily", "name": "North Portland", "location": "Mississippi / Arbor Lodge", "detail": "16 units" },

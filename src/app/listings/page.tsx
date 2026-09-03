@@ -3,7 +3,7 @@ import { listingsPage } from "@/lib/content";
 import { getAllListings } from "@/lib/listings";
 import { EyebrowHeader } from "@/components/marketing/EyebrowHeader";
 import { ListingCard } from "@/components/listings/ListingCard";
-import { PastTransactionCard } from "@/components/listings/PastTransactionCard";
+import { PastPropertyCard } from "@/components/listings/PastPropertyCard";
 import { NotifyForm } from "@/components/forms/NotifyForm";
 
 export const metadata = {
@@ -72,8 +72,8 @@ export default function ListingsPage() {
         </p>
 
         <div className="past-grid">
-          {listingsPage.past.transactions.map((t, i) => (
-            <PastTransactionCard key={i} transaction={t} />
+          {listingsPage.past.properties.map((t, i) => (
+            <PastPropertyCard key={i} property={t} />
           ))}
         </div>
       </section>

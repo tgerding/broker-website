@@ -415,8 +415,8 @@ listings (date-prefixed, newest first), ascending for closed
 (number-prefixed). Both ordering and, for listings, the page URL come from the
 filename; nothing inside a file affects either. `ListingFile` is what a file
 contains and `Listing` adds the filename-derived identifier the routes and
-card links need. `ClosedTransaction` has no such field — nothing links to an
-individual closed transaction.
+card links need. `ClosedProperty` has no such field — nothing links to an
+individual sold property.
 
 **Theme.** `content/theme.json` is the only source of colors and typefaces.
 `src/lib/theme-css.ts` turns its `colors` into a `:root` block injected by
@@ -449,7 +449,7 @@ Netlify dashboard under **Forms**.
   (`/listings/2026-09-14-raleigh-heights/`) because the filename serves as both
   the sort key and the URL. Separating them means giving files an explicit
   identifier and sorting on something else.
-- `content/listings-page.json` still holds four placeholder past transactions,
+- `content/listings-page.json` still holds four placeholder past properties,
   and `/listings` isn't linked from the nav.
 - Font sizes and spacing are hardcoded throughout `globals.css`; only colors and
   typefaces are tokenized.

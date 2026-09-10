@@ -88,6 +88,23 @@ live. See [If something goes wrong](#if-something-goes-wrong).
 - `true` — the real website
 - `false` — the "Coming Soon" holding page
 
+### Previewing the real site while "Coming Soon" is up
+
+Add `?preview=on` to the end of the address:
+
+```
+https://gerdingcre.com/?preview=on
+```
+
+That browser now sees the finished site — every page, with your latest copy
+edits — while everyone else still gets the holding page. A gold bar along the
+bottom reminds you that you are in preview mode; click **Exit** there (or visit
+`?preview=off`) to go back to the holding page.
+
+It is remembered in that browser, so you only have to do it once per device.
+Edit your copy in GitHub, give the site a minute or two to rebuild, then reload
+the page to see the change.
+
 ---
 
 ## Active listings (properties for sale)

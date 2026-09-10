@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
-import { ComingSoon } from "@/components/layout/ComingSoon";
+import { PreviewGate } from "@/components/layout/PreviewGate";
 import { NetlifyFormsHidden } from "@/components/forms/NetlifyFormsHidden";
 import { settings, site } from "@/lib/content";
 import { themeRootCss } from "@/lib/theme-css";
@@ -21,24 +21,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const chrome = (
+    <>
+      <Nav />
+      {children}
+      <Footer />
+      <NetlifyFormsHidden />
+    </>
+  );
+
   return (
     <html lang="en" className={fontVariableClassName()}>
       <head>
         {/* Colors come from content/theme.json — edit that file, not this. */}
         <style dangerouslySetInnerHTML={{ __html: themeRootCss() }} />
       </head>
-      <body>
-        {settings.enabled ? (
-          <>
-            <Nav />
-            {children}
-            <Footer />
-            <NetlifyFormsHidden />
-          </>
-        ) : (
-          <ComingSoon />
-        )}
-      </body>
+      <body>{settings.enabled ? chrome : <PreviewGate>{chrome}</PreviewGate>}</body>
     </html>
   );
 }

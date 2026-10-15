@@ -63,14 +63,14 @@
   ],
   "recentlyClosed": {
     "eyebrow": "Recently closed",
-    "headline": "A track record built across<br />Portland and the Valley.",
+    "headline": "Experience measured in results.",
     "viewAllLabel": "View all properties →",
     "limit": 6
   },
   "cta": {
     "eyebrow": "Start a conversation",
     "headlineHtml": "You don't need to be<br />ready to sell to<br /><em>reach out.</em>",
-    "body": "Whether you're years away from a decision or ready to move now — I'm happy to sit down, talk through your situation, and share honest perspective. No pressure. No pitch.",
+    "body": "Whether you're considering a sale or simply thinking about the future, there's value in having a conversation. Sometimes the best next step is just getting a better understanding of your options.",
     "button": { "label": "Let's talk", "href": "/contact" }
   }
 }

@@ -44,6 +44,10 @@
       "value": "#5a6e64",
       "usedFor": "Ordinary paragraph text sitting on cream backgrounds. A muted green-grey rather than plain grey."
     },
+    "labelText": {
+      "value": "#636861",
+      "usedFor": "Quieter text on cream backgrounds: the small uppercase labels on property cards and detail pages (Price, Size, and so on), contact form labels, disclaimers, broker titles, and the '← Back' links. Keep it lighter than bodyText but dark enough to read."
+    },
     "footerGreen": {
       "value": "#222d27",
       "usedFor": "The footer background only. Deliberately a shade darker than darkGreen so the footer reads as separate from the section above it."

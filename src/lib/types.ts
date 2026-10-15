@@ -80,6 +80,7 @@ export interface ThemeColors {
   panelCreamDark: ThemeColor;
   gold: ThemeColor;
   bodyText: ThemeColor;
+  labelText: ThemeColor;
   footerGreen: ThemeColor;
   comingSoonBackground: ThemeColor;
   errorRed: ThemeColor;

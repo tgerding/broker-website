@@ -3,8 +3,8 @@
     "eyebrow": "Portland, Oregon · Multifamily Advisor",
     "headlineHtml": "Some decisions<br /><em>span generations.</em><br />Let's get this one right.",
     "sub": "Advisory and brokerage for apartment owners across Portland, the Willamette Valley, and beyond. Whether you're selling, holding, or planning what comes next.",
-    "primaryCta": { "label": "Let's have a conversation", "href": "/contact" },
-    "secondaryCta": { "label": "Learn about my approach →", "href": "/about" },
+    "primaryCta": { "label": "Start a conversation", "href": "/contact" },
+    "secondaryCta": { "label": "See the approach →", "href": "/about" },
     "image": "/images/hero-portland.jpg",
     "imageAlt": "Portland Oregon aerial"
   },

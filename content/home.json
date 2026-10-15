@@ -24,14 +24,14 @@
     "imageAlt": "Portland apartment building"
   },
   "howIWork": {
-    "eyebrow": "How it works",
+    "eyebrow": "The Approach",
     "headline": "Thoughtful process.<br />Decisive execution.",
-    "sub": "Relationships here are measured in years, not transactions. Many owners call long before they’re ready to sell and stay in touch long after closing.",
+    "sub": "Good advice starts with understanding the owner, not just the property. Whether you're thinking about selling today or simply weighing your options, the goal is to help you make the right decision for the long term.",
     "steps": [
       { "number": "01", "title": "Listen", "body": "Every good decision starts with your goals: what this property means to you, and how it fits into your life, investment strategy and your plans." },
-      { "number": "02", "title": "Advise", "body": "Once the property’s role is clear, we take an honest look at the realistic options in front of you and what each one means for your plan." },
-      { "number": "03", "title": "Negotiate", "body": "Getting a listing in front of buyers is the easy part. The real value is in choosing the right buyer, protecting your terms, and defending your price all the way to closing." },
-      { "number": "04", "title": "Stay close", "body": "Most clients call well before they sell, and keep calling after. Whether it’s a rent question, a refinance, or the next building, the door stays open." }
+      { "number": "02", "title": "Advise", "body": "Selling isn't always the right answer. An honest look at the market, your property's position, and the available options helps determine the best path forward." },
+      { "number": "03", "title": "Negotiate", "body": "Anyone can "list" a property. The real value comes next. Choosing the right buyer, protecting your terms, and defending your price all the way to closing." },
+      { "number": "04", "title": "Stay Connected", "body": "The relationship doesn't end at closing. Whether it's a question about rents, refinancing, or the next investment, the conversation continues." }
     ],
     "quote": "Sellers spend months evaluating their property. Most spend far less time choosing who will negotiate for them — and that decision often matters more than any other."
   },

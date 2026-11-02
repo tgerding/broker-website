@@ -2,7 +2,7 @@
   "header": {
     "eyebrow": "About Tyler Gerding",
     "headlineHtml": "Advisor first.<br /><em>Broker second.</em>",
-    "intro": "Fifteen years in Portland multifamily. Over a decade as an owner. A reputation for tenacious negotiation and honest advice — even when that advice is to wait."
+    "intro": "Fifteen years in Portland multifamily. More than a decade as an apartment owner. An approach grounded in experience, sound advice, and strong negotiation."
   },
   "bio": {
     "eyebrow": "Tyler Gerding",
@@ -15,12 +15,12 @@
   },
   "credentials": [
     {
-      "label": "Experience",
-      "value": "15",
+      "label": "Brokerage Experience",
+      "value": "15+",
       "description": "Years in Portland multifamily, working with owners across the Willamette Valley"
     },
     {
-      "label": "As an owner",
+      "label": "Ownership Experience",
       "value": "10+",
       "description": "Years as an apartment building owner — bringing a real owner's perspective to every conversation"
     },
@@ -33,11 +33,10 @@
   ],
   "perspective": {
     "eyebrow": "The owner's perspective",
-    "headline": "I've seen this business from every side of the table.",
-    "intro": "Most brokers understand apartment buildings as financial instruments. I understand them as something more — as the product of real work, real sacrifice, and real hope for the future. That shift in perspective changes everything about how I advise clients.",
-    "quote": "Apartment buildings aren't just assets. They represent years of effort, financial security, and for many families — a legacy. I treat them that way.",
-    "paragraphs": [
-      "When you work with me, you're working with someone who has navigated the same decisions you're facing — as an owner and as an advisor. That's not a marketing line. It's just true."
+    "headline": "Brokerage experience. Ownership perspective.",
+    "intro": "Owning apartment buildings brings a different understanding to the brokerage business. Cash flow, financing, capital improvements, taxes, and long-term investment decisions aren't just concepts I discuss with clients. They're considerations I've navigated myself.",
+        "paragraphs": [
+      "That experience influences how I evaluate properties, approach negotiations, and advise owners on their options."
     ],
     "approachEyebrow": "My approach",
     "approachHeadline": "Honest advice, even when it's not what you want to hear.",

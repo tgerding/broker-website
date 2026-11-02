@@ -35,7 +35,7 @@
     "eyebrow": "The owner's perspective",
     "headline": "Brokerage experience. Ownership perspective.",
     "intro": "Owning apartment buildings brings a different understanding to the brokerage business. Cash flow, financing, capital improvements, taxes, and long-term investment decisions aren't just concepts I discuss with clients. They're considerations I've navigated myself.",
-        "paragraphs": [
+    "paragraphs": [
       "That experience influences how I evaluate properties, approach negotiations, and advise owners on their options."
     ],
     "approachEyebrow": "My approach",
@@ -47,21 +47,21 @@
   },
   "negotiation": {
     "eyebrow": "When it's time to transact",
-    "headline": "Anyone can list a property. The question is whether your advisor can truly fight for you.",
+    "headline": "The right strategy matters. The right execution matters more.",
     "paragraphs": [
-      "My reputation for negotiation is something I've earned over fifteen years of deals — from small duplexes to 100-unit portfolios. I understand buyer psychology, I know this market's buyer pool deeply, and I know how to position a property to generate the right competition.",
-      "Picking the right negotiator is one of the most important — and most overlooked — decisions a seller makes. I'm not aggressive for its own sake. But when my clients need someone in their corner who won't blink, I'm that person."
+      "A successful transaction requires more than finding a buyer. It requires preparation, an understanding of the market, and the judgment to recognize which buyers can perform and which terms matter most.",
+      "Negotiation is where much of that preparation pays off. Knowing when to push, how to defend a property's value, and how to protect the seller's position through closing can make a meaningful difference in the outcome."
     ],
     "points": [
-      { "number": "01", "title": "Deep buyer relationships", "body": "Fifteen years means I know the active buyers before a property ever hits the market. That's leverage from day one." },
-      { "number": "02", "title": "Strategic positioning", "body": "Older buildings have character and history. I know how to tell that story in a way that commands the right price." },
-      { "number": "03", "title": "Owner's market knowledge", "body": "As an owner myself, I understand what buyers are thinking — which gives me a real edge negotiating on your behalf." },
-      { "number": "04", "title": "Disciplined execution", "body": "From marketing through closing, I manage every detail. No dropped balls, no surprises, no hand-offs to junior staff." }
+      { "number": "01", "title": "Buyer relationships", "body": "Years of working with multifamily investors provide insight into who's actively buying, what they're looking for, and which buyers are positioned to perform." },
+      { "number": "02", "title": "Strategic positioning", "body": "Every property has strengths worth emphasizing. Effective pricing and positioning create interest, establish credibility, and provide a foundation for negotiation." },
+      { "number": "03", "title": "NEGOTIATING JUDGMENT", "body": "The highest offer isn't always the best offer. Buyer qualifications, financing, contingencies, and timing all influence the strength of a transaction." },
+      { "number": "04", "title": "Disciplined execution", "body": "From the initial marketing strategy through due diligence and closing, attention to detail and proactive communication help keep the transaction moving." }
     ]
   },
   "cta": {
-    "headline": "You don't need an agenda to reach out.",
-    "body": "Whether you have a specific property in mind or just want to understand the market better — I'm happy to have an honest conversation. That's how every good relationship starts.",
+    "headline": "You don't need to be ready to sell to reach out.",
+    "body": "Whether you're considering a sale, evaluating an investment, or simply looking for another perspective, I'm always happy to talk. Some of the best relationships begin with a conversation long before there's a transaction.",
     "button": { "label": "Get in touch", "href": "/contact" }
   }
 }

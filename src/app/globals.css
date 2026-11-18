@@ -214,8 +214,8 @@ button { cursor: pointer; font-family: var(--font-body), sans-serif; }
 .mkt-overlay { position: absolute; inset: 0; background: linear-gradient(to top, var(--green-strong) 0%, var(--green-line-strong) 65%, var(--green-wash) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 30px; }
 .mkt-label { font-size: 14px; letter-spacing: 0.22em; color: var(--gold); margin-bottom: 7px; text-transform: uppercase; }
 .mkt-name { font-family: var(--font-headings), serif; font-size: 28px; font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 8px; }
-.mkt-sub { font-size: 14px; color: var(--cream-muted); margin-bottom: 10px; letter-spacing: 0.06em; }
-.mkt-arrow { font-size: 14px; letter-spacing: 0.14em; color: var(--cream-muted); border-bottom: 0.5px solid var(--cream-faint); padding-bottom: 2px; display: inline-block; }
+.mkt-sub { font-size: 14px; color: var(--cream-strong); margin-bottom: 10px; letter-spacing: 0.06em; }
+.mkt-arrow { font-size: 14px; letter-spacing: 0.14em; color: var(--cream-strong); border-bottom: 0.5px solid var(--cream-faint); padding-bottom: 2px; display: inline-block; }
 .mkt-divider { position: absolute; top: 15%; bottom: 15%; right: 0; width: 0.5px; background: var(--cream-faint); }
 
 /* HOME — RECENTLY CLOSED */
@@ -230,8 +230,8 @@ button { cursor: pointer; font-family: var(--font-body), sans-serif; }
 .rep-badge { position: absolute; top: 14px; right: 14px; background: var(--green-strong); color: var(--cream-strong); font-size: 14px; letter-spacing: 0.12em; padding: 4px 8px; text-transform: uppercase; }
 .card-body { padding: 20px; }
 .card-type { font-size: 14px; letter-spacing: 0.16em; color: var(--gold); margin-bottom: 6px; text-transform: uppercase; }
-.card-name { font-family: var(--font-headings), serif; font-size: 20px; color: var(--dark-green); margin-bottom: 3px; line-height: 1.2; }
-.card-loc { font-size: 14px; color: var(--body-text); margin-bottom: 14px; }
+.card-name { font-family: var(--font-headings), serif; font-size: 22px; color: var(--dark-green); margin-bottom: 3px; line-height: 1.2; }
+.card-loc { font-size: 15px; color: var(--body-text); margin-bottom: 14px; }
 .card-meta { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; padding-top: 12px; border-top: 0.5px solid var(--green-line); }
 .meta-label { font-size: 14px; letter-spacing: 0.14em; color: var(--label-text); margin-bottom: 3px; text-transform: uppercase; }
 .meta-val { font-size: 14px; color: var(--dark-green); font-weight: 400; }

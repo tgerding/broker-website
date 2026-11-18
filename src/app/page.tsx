@@ -124,9 +124,9 @@ export default function HomePage() {
               }}
             />
           </div>
-          <Link href="/properties" className="closed-link">
+          <Span className="closed-link">
             {home.recentlyClosed.viewAllLabel}
-          </Link>
+          </span>
         </div>
         <div className="closed-grid">
           {getAllClosedPropertys()

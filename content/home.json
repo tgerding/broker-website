@@ -68,9 +68,9 @@
     "limit": 6
   },
   "cta": {
-    "eyebrow": "Start a conversation",
-    "headlineHtml": "You don't need to be<br />ready to sell to<br /><em>reach out.</em>",
-    "body": "Whether you're considering a sale or simply thinking about the future, there's value in having a conversation. Sometimes the best next step is just getting a better understanding of your options.",
-    "button": { "label": "Let's talk", "href": "/contact" }
+    "eyebrow": "Know your options",
+    "headlineHtml": "What's your property worth?",
+    "body": "Whether you're considering a sale or simply curious about today's market, understanding your property's value is a good place to start. No pressure. No obligation. Just an informed perspective.",
+    "button": { "label": "Request a Valuation", "href": "/contact" }
   }
 }

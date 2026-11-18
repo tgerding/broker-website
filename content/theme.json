@@ -41,11 +41,11 @@
       "usedFor": "The accent. All the small uppercase labels above section headings, the short divider rules beneath them, the quote marks on pull-quotes, and the underline on whichever nav link you're currently on."
     },
     "bodyText": {
-      "value": "#5a6e64",
+      "value": "#43564D",
       "usedFor": "Ordinary paragraph text sitting on cream backgrounds. A muted green-grey rather than plain grey."
     },
     "labelText": {
-      "value": "#636861",
+      "value": "#4D554F",
       "usedFor": "Quieter text on cream backgrounds: the small uppercase labels on property cards and detail pages (Price, Size, and so on), contact form labels, disclaimers, broker titles, and the '← Back' links. Keep it lighter than bodyText but dark enough to read."
     },
     "footerGreen": {

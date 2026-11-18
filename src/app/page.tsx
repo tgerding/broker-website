@@ -124,7 +124,7 @@ export default function HomePage() {
               }}
             />
           </div>
-          <Span className="closed-link">
+          <span className="closed-link">
             {home.recentlyClosed.viewAllLabel}
           </span>
         </div>

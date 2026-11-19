@@ -176,13 +176,7 @@ export default function PropertiesPage() {
               {properties.cta.seller.button.label}
             </Link>
           </div>
-          <div
-            style={{
-              background: "var(--cream-wash)",
-              border: "0.5px solid var(--cream-line)",
-              padding: "44px",
-            }}
-          >
+          <div>
             <EyebrowHeader eyebrow={properties.cta.buyer.eyebrow} />
             <div
               style={{
@@ -209,7 +203,6 @@ export default function PropertiesPage() {
             <Link
               href={properties.cta.buyer.button.href}
               className="btn-outline-cream"
-              style={{ fontSize: "14px", padding: "10px 18px" }}
             >
               {properties.cta.buyer.button.label}
             </Link>

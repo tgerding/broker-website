@@ -178,18 +178,7 @@ export default function PropertiesPage() {
           </div>
           <div>
             <EyebrowHeader eyebrow={properties.cta.buyer.eyebrow} />
-            <div
-              style={{
-                fontFamily: "var(--font-headings), serif",
-                fontSize: "26px",
-                color: "var(--cream)",
-                fontWeight: 300,
-                lineHeight: 1.3,
-                marginBottom: "16px",
-              }}
-            >
-              {properties.cta.buyer.headline}
-            </div>
+         <h2>{properties.cta.buyer.headline}</h2>
             <p
               style={{
                 fontSize: "14px",

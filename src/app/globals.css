@@ -328,7 +328,7 @@ button { cursor: pointer; font-family: var(--font-body), sans-serif; }
 .cl-intro { font-size: 14px; color: var(--cream-muted); line-height: 1.9; margin-bottom: 48px; max-width: 380px; }
 .cl-note { font-size: 14px; color: var(--cream-faint); line-height: 1.75; border-top: 0.5px solid var(--cream-line); padding-top: 22px; }
 
-.cr { background: var(--cream); padding: 80px 64px; display: flex; flex-direction: column; justify-content: center; }
+.cr { background: var(--cream); padding: 80px 64px; display: flex; flex-direction: column; justify-content: flex-start; }
 .form-title { font-size: 14px; font-weight: 500; letter-spacing: 0.1em; color: var(--dark-green); margin-bottom: 36px; text-transform: uppercase; }
 .form { display: flex; flex-direction: column; gap: 18px; }
 .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }

@@ -74,7 +74,7 @@
     }
   ],
   "cta": {
-    "headlineHtml": "Every property is different<br />and <em>So is its value.</em>",
+    "headlineHtml": "Every property is different.<br /><em>So is its value.</em>",
     "body": "Location is only part of the equation. Property characteristics, operating performance, and buyer expectations all influence what a property may be worth. Whether you're considering a sale or simply curious about your property's current value, I'm happy to provide an informed perspective.",
     "button": { "label": "REQUEST A VALUATION", "href": "/contact" }
   }

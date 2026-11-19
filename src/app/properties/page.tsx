@@ -134,19 +134,7 @@ export default function PropertiesPage() {
               }}
             />
           </div>
-          <p
-            style={{
-              fontSize: "14px",
-              color: "var(--text-body)",
-              maxWidth: "280px",
-              lineHeight: 1.8,
-              textAlign: "right",
-            }}
-          >
-            Interested in comparable sales data for your area? I&apos;m happy to
-            share details in a conversation.
-          </p>
-        </div>
+         </div>
 
         <div className="closed-grid">
           {getAllClosedPropertys().map((t) => (

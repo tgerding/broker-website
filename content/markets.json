@@ -61,19 +61,21 @@
       "photoImage": "/images/market-valley.jpg",
       "photoAlt": "Willamette Valley",
       "paragraphs": [
-        "The Willamette Valley corridor represents a distinct and often underappreciated multifamily market. Connected by I-5 and sharing similar investment fundamentals, these communities offer accessible entry points, stable renter bases, and long-term ownership potential that's harder to find in the Portland market today.",
-        "Newberg sits at the edge of wine country with a growing investor profile. McMinnville is Yamhill County's largest city with a strong downtown core and steady renter demand. Salem's state government employment anchors one of the most stable renter bases in Oregon. Albany offers historic buildings, affordable pricing, and steady demand from manufacturing and healthcare workers."
+        "The Willamette Valley offers a different investment environment from the Portland metropolitan area. Its communities combine established neighborhoods, regional employment, and rental housing demand with the character of smaller cities and towns.",
+        "In many of these markets, the limited supply of multifamily properties can be an important consideration. New development may be constrained by land availability, construction economics, or the scale of the local market. For existing properties, these supply characteristics can contribute to long-term investment appeal.",
+        "Each community brings something different. Newberg and McMinnville are closely connected to the region's agricultural and wine industries, Salem benefits from its role as Oregon's capital and a regional employment center, and Albany offers access to the broader mid-Willamette Valley economy.",      
+        "For investors looking beyond Portland, these markets are worth understanding on their own terms rather than simply as smaller versions of the metropolitan area."
       ],
       "details": [
-        { "label": "Property type", "value": "Duplex – 100 units" },
-        { "label": "Buyer pool", "value": "Value-focused" },
-        { "label": "Character", "value": "Affordable, stable" }
+        { "label": "Property Profile", "value": "Smaller and established multifamily communities" },
+        { "label": "Investor Considerations", "value": "Limited supply, local employment, development economics" },
+        { "label": "Market Character", "value": "Regional, community-oriented, varied" }
       ]
     }
   ],
   "cta": {
-    "headlineHtml": "Let's talk about what it's worth<br />and <em>what makes sense for you.</em>",
-    "body": "Whether you're curious about current values, thinking about timing a sale, or just want to understand your market better — I'm happy to have an honest conversation. No pressure, no pitch.",
-    "button": { "label": "Start a conversation", "href": "/contact" }
+    "headlineHtml": "Every property is different<br />and <em>So is its value.</em>",
+    "body": "Location is only part of the equation. Property characteristics, operating performance, and buyer expectations all influence what a property may be worth. Whether you're considering a sale or simply curious about your property's current value, I'm happy to provide an informed perspective.",
+    "button": { "label": "REQUEST A VALUATION", "href": "/contact" }
   }
 }

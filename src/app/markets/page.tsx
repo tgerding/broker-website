@@ -18,6 +18,11 @@ export default function MarketsPage() {
         <h1 dangerouslySetInnerHTML={{ __html: markets.header.headlineHtml }} />
         <p>{markets.header.intro}</p>
       </header>
+      
+      <MarketButtons
+        linkTo={(slug) => `#${slug}`}
+        arrowLabel="Jump to this market ↓"
+      />
 <div className="section-break">
         <EyebrowHeader eyebrow={markets.sectionBreak.eyebrow} />
         <h2
@@ -32,13 +37,8 @@ export default function MarketsPage() {
           {markets.sectionBreak.headline}
         </h2>
       </div>
-      
-      <MarketButtons
-        linkTo={(slug) => `#${slug}`}
-        arrowLabel="Jump to this market ↓"
-      />
- 
-      <div className="markets-list" style={{ marginTop: "32px" }}>
+         
+       <div className="markets-list" style={{ marginTop: "32px" }}>
         {markets.markets.map((m) => (
           <div
             key={m.slug}

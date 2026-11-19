@@ -65,6 +65,7 @@ export default function PropertiesPage() {
         />
       </header>
 
+     {hasActiveListings && (
       <section className="active-section">
         <div className="section-hdr">
           <div>
@@ -120,7 +121,8 @@ export default function PropertiesPage() {
           </div>
         )}
       </section>
-
+      )}
+      
       <section className="closed-section">
         <div className="section-hdr">
           <div>

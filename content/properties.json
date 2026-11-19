@@ -26,14 +26,14 @@
     }
   },
   "closedSection": {
-    "eyebrow": "Recently closed",
-    "headline": "A sample of recent closings<br />across Portland and the Valley."
+    "eyebrow": "Recently Closed",
+    "headline": "Selected Work Throughout the Region."
   },
   "cta": {
     "seller": {
       "eyebrow": "Thinking about selling?",
       "headlineHtml": "You don't need to be ready<br />to list to <em>start a conversation.</em>",
-      "body": "Most of my best engagements start years before a sale. Let's talk about your property, your timeline, and what the market looks like right now.",
+      "body": "Past sales offer perspective, but no two properties are alike. If you're considering a sale or simply curious about your property's value, let's talk about where yours stands.",
       "button": {
         "label": "Let's talk",
         "href": "/contact"
@@ -41,10 +41,10 @@
     },
     "buyer": {
       "eyebrow": "For buyers",
-      "headline": "Looking for multifamily in Portland or the Valley?",
-      "body": "I work with a select number of qualified buyers and can often connect them with properties before they hit the market. Let's talk about what you're looking for.",
+      "headline": "The right property isn’t always listed.",
+      "body": "When it’s not on the market, we go find it. For buyers with a specific target, I offer exclusive representation: a dedicated search, built around your goals and pursued for you alone.",
       "button": {
-        "label": "Connect with Tyler",
+        "label": "Start A SEARCH",
         "href": "/contact"
       }
     }

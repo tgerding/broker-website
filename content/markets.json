@@ -20,14 +20,14 @@
       "photoImage": "/images/market-portland.jpg",
       "photoAlt": "Portland Proper",
       "paragraphs": [
-        "Portland offers one of the region's most established and diverse multifamily markets. Its distinct neighborhoods, historic housing stock, employment centers, and urban amenities have long attracted renters and investors alike.",
-        "However, Portland also presents challenges. Local regulations, operating expenses, property taxes, and the responsibilities associated with older buildings can create a more complicated ownership environment. These considerations have become an increasingly important part of evaluating an investment.",
+        "Portland offers one of the region's most established and diverse multifamily markets. Its distinct neighborhoods include everything from historic apartment buildings to modern developments constructed during the city's recent building boom. This variety, combined with established employment centers and urban amenities, has long attracted renters and investors alike.",
+        "However, Portland also presents challenges. Local regulations, operating expenses, property taxes, and changing development economics can create a complicated ownership environment. These considerations affect properties differently depending on their age, condition, location, and operating characteristics.",
         "For investors willing to understand those complexities, Portland offers a wide range of property types, neighborhood characteristics, and opportunities. Success often comes down to careful underwriting, realistic expectations, and an understanding of the individual asset."
      ],
       "details": [
-        { "label": "Property type", "value": "Duplex – 100 units" },
-        { "label": "Buyer pool", "value": "Deep, competitive" },
-        { "label": "Character", "value": "Urban, walkable" }
+        { "label": "Property Profile", "value": "Historic, established, and newer multifamily" },
+        { "label": "Investor Considerations", "value": "Regulation, operating costs, property condition" },
+        { "label": "Market Character", "value": "Urban, diverse, neighborhood-driven" }
       ]
     },
     {
@@ -40,13 +40,14 @@
       "photoImage": "/images/market-all.jpg",
       "photoAlt": "Portland Metro",
       "paragraphs": [
-        "The Portland metro suburbs offer a different investment profile than the inner city — generally larger lot sizes, more recent construction, and a renter base anchored by tech and healthcare employment. Beaverton and Hillsboro in particular benefit from proximity to Intel, Nike, and the broader Silicon Forest employment corridor.",
-        "Lake Oswego and Milwaukie attract owners looking for stable, higher-income renters. Gresham offers accessible entry points with strong fundamentals. Clackamas continues to grow as a multifamily market driven by its position between Portland and the broader south metro."
+        "The communities surrounding Portland offer a different approach to multifamily investing. From established suburban neighborhoods to growing employment centers, the metro area includes a broad range of rental markets, property types, and investment opportunities.",
+        "For some investors, these communities offer an appealing alternative to owning within the Portland city limits. Differences in local regulations, operating environments, and housing characteristics can influence both the economics and day-to-day responsibilities of ownership.",
+        "Beaverton and Hillsboro benefit from major employment centers, while communities such as Lake Oswego, Tigard, and Milwaukie offer their own combinations of established neighborhoods, amenities, and rental demand. Each market has distinct characteristics, making property-specific analysis especially important."      
       ],
       "details": [
-        { "label": "Property type", "value": "Duplex – 100 units" },
-        { "label": "Buyer pool", "value": "Active, regional" },
-        { "label": "Character", "value": "Suburban, employment-driven" }
+        { "label": "Property Profile", "value": "Established and newer suburban multifamily" },
+        { "label": "Investor Considerations", "value": "Employment centers, local regulations, rental demand" },
+        { "label": "Market Character", "value": "Suburban, varied, employment-driven" }
       ],
       "alt": true
     },

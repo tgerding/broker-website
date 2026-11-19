@@ -98,7 +98,7 @@ export default function MarketsPage() {
       </div>
 
       <div className="mkt-cta">
-        <EyebrowHeader eyebrow="Have a property in one of these markets?" centered />
+        <EyebrowHeader eyebrow="UNDERSTANDING YOUR PROPERTY'S VALUE" centered />
         <h2 dangerouslySetInnerHTML={{ __html: markets.cta.headlineHtml }} />
         <p>{markets.cta.body}</p>
         <Link href={markets.cta.button.href} className="btn-outline-cream">

@@ -32,7 +32,7 @@
   "cta": {
     "seller": {
       "eyebrow": "For Sellers",
-      "headlineHtml": "Every Property Has Its Own Value.",
+      "headlineHtml": "Every property has its own<escape><br /></escape>value.",
       "body": "Past sales offer perspective, but no two properties are alike. If you're considering a sale or simply curious about your property's value, let's talk about where yours stands.",
       "button": {
         "label": "REQUEST A VALUATION",
